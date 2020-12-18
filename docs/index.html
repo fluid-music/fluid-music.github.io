@@ -58,13 +58,50 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<a href="#fluid-music-nodejs-api-docs" id="fluid-music-nodejs-api-docs" style="color: inherit; text-decoration: none;">
-					<h1>Fluid Music Node.js API Docs</h1>
+				<a href="#fluid-music" id="fluid-music" style="color: inherit; text-decoration: none;">
+					<h1>Fluid Music</h1>
 				</a>
-				<p>If you are using <code>fluid-music</code> for the first time, these two guides are likely to be more helpful than the API documentation:</p>
+				<p>Extensible Music Composition and Music Production Framework for <a href="https://nodejs.org">Node</a>.</p>
+				<pre><code class="language-javascript"><span style="color: #008000">// Two measures of snare, kick, and tambourine transcribed with &#039;fluid-music&#039;</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">score</span><span style="color: #000000"> = {</span>
+<span style="color: #000000">  </span><span style="color: #001080">r:</span><span style="color: #000000">      </span><span style="color: #A31515">&#039;1 + 2 + 3 + 4 + &#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">snare:</span><span style="color: #000000"> [</span><span style="color: #A31515">&#039;    s       s   &#039;</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;    s       s   &#039;</span><span style="color: #000000">],</span>
+<span style="color: #000000">  </span><span style="color: #001080">kick:</span><span style="color: #000000">  [</span><span style="color: #A31515">&#039;D               &#039;</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;          D  D  &#039;</span><span style="color: #000000">],</span>
+<span style="color: #000000">  </span><span style="color: #001080">tamb:</span><span style="color: #000000">  [</span><span style="color: #A31515">&#039;t t t t t t t t &#039;</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;t t t t t t t t &#039;</span><span style="color: #000000">],</span>
+<span style="color: #000000">}</span>
+</code></pre>
+				<p>Fluid music converts JavaScript score objects (above) to:</p>
 				<ul>
-					<li><a href="https://github.com/CharlesHolbrow/cybr/blob/main/docs/getting-started.md">Getting Started</a></li>
-					<li><a href="https://github.com/CharlesHolbrow/cybr/blob/main/docs/getting-started.md">Fluid Music Concepts</a></li>
+					<li>realtime audio</li>
+					<li><code>.wav</code> audio files</li>
+					<li><code>.tracktionedit</code> files for <a href="https://www.tracktion.com/products/waveform-pro">Tracktion Waveform</a></li>
+					<li><code>.rpp</code> files for <a href="https://reaper.fm">Reaper</a> (below)</li>
+				</ul>
+				<p><img src="https://user-images.githubusercontent.com/1512520/102311683-4baa3b80-3f3b-11eb-87d1-85f4909afb0a.png" alt="Reaper DAW Example"></p>
+				<p>Fluid Music is:</p>
+				<ul>
+					<li><strong>Extensible:</strong> Author reusable sound design techniques in JavaScript, and use them in your scores</li>
+					<li><strong>Open:</strong> Publish and reuse sound design techniques with <a href="https://npmjs.com">npm</a></li>
+				</ul>
+				<p>Fluid Music scores can:</p>
+				<ul>
+					<li>Sequence and edit audio files (trim, fade, move, reverse)</li>
+					<li>Insert MIDI notes and clips</li>
+					<li>Support unusual time signatures and rhythms (go beyond 4/4!)</li>
+					<li>Set and automate VST plugin parameters</li>
+					<li>Set and automate track parameters (ex. volume, panning)</li>
+					<li>Modify the underlying session (add tracks, routing, grouping, side chaining, etc)</li>
+					<li>Insert random or procedurally generated content</li>
+					<li>Do anything you can code</li>
+				</ul>
+				<a href="#learn-more" id="learn-more" style="color: inherit; text-decoration: none;">
+					<h2>Learn More</h2>
+				</a>
+				<ul>
+					<li><a href="docs/getting-started.md">Getting started guide</a></li>
+					<li><a href="docs/concepts.md">Concepts</a></li>
+					<li><a href="https://fluid-music.github.io/">API Documentation</a></li>
+					<li><a href="docs/comparison.md">Comparison with Other tools</a></li>
 				</ul>
 			</div>
 		</div>

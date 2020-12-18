@@ -70,6 +70,12 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/tab.rhythm.html" class="tsd-kind-icon">Rhythm</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-variable tsd-parent-kind-namespace"><a href="tab.html#reservedkeys" class="tsd-kind-icon">reserved<wbr>Keys</a></li>
@@ -97,7 +103,7 @@
 					<div class="tsd-signature tsd-kind-icon">reserved<wbr>Keys<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>clips<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>dLibrary<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>duration<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>eLibrary<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>eventMappers<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>meta<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>nLibrary<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>noteLibrary<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>originalValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>parent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>plugins<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>r<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>regions<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>startTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>tLibrary<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>tracks<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>v<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>vLibrary<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = {r: true,            // rhythm patternd: true,            // dynamics patternv: true,            // deprecated. formerly velocitynoteLibrary : true, // deprecated in favor of tLibrarynLibrary: true,     // deprecated in favor of tLibraryvLibrary: true,     // deprecated in favor of dLibraryeLibrary: true,     // Possible use: events librarydLibrary: true,     // dynamics librarytLibrary: true,     // technique LibraryeventMappers: true, // specifies custom eventMapper methodsplugins: true,      // tracksObject has a .plugins arrayduration: true,startTime: true,meta: true,originalValue: true,name: true,clips: true,tracks: true,key: true,parent: true,regions: true,}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/d0c4ff3/fluid-music/src/tab.ts#L315">tab.ts:315</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/1d21325/fluid-music/src/tab.ts#L319">tab.ts:319</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -187,7 +193,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/d0c4ff3/fluid-music/src/tab.ts#L199">tab.ts:199</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/1d21325/fluid-music/src/tab.ts#L203">tab.ts:203</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -214,13 +220,13 @@
 					<a name="createdynamicgetter" class="tsd-anchor"></a>
 					<h3>create<wbr>Dynamic<wbr>Getter</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Dynamic<wbr>Getter<span class="tsd-signature-symbol">(</span>rhythm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Rhythm</span>, dPattern<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, dLibrary<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">dLibrary</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>time<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Technique</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Dynamic<wbr>Getter<span class="tsd-signature-symbol">(</span>rhythm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/tab.rhythm.html" class="tsd-signature-type">Rhythm</a>, dPattern<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, dLibrary<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">dLibrary</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>time<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Technique</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/d0c4ff3/fluid-music/src/tab.ts#L294">tab.ts:294</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/1d21325/fluid-music/src/tab.ts#L298">tab.ts:298</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -234,7 +240,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>rhythm: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Rhythm</span></h5>
+									<h5>rhythm: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/tab.rhythm.html" class="tsd-signature-type">Rhythm</a></h5>
 								</li>
 								<li>
 									<h5>dPattern: <span class="tsd-signature-type">string</span></h5>
@@ -274,13 +280,13 @@
 					<a name="parserhythm" class="tsd-anchor"></a>
 					<h3>parse<wbr>Rhythm</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">parse<wbr>Rhythm<span class="tsd-signature-symbol">(</span>rhythm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Rhythm</span></li>
+						<li class="tsd-signature tsd-kind-icon">parse<wbr>Rhythm<span class="tsd-signature-symbol">(</span>rhythm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/tab.rhythm.html" class="tsd-signature-type">Rhythm</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/d0c4ff3/fluid-music/src/tab.ts#L22">tab.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/1d21325/fluid-music/src/tab.ts#L26">tab.ts:26</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -297,7 +303,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Rhythm</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/tab.rhythm.html" class="tsd-signature-type">Rhythm</a></h4>
 							<p>a javascript object representing timing. The object will
 								have two properties, both of which are arrays:
 								- .totals is a measure of elapsed times
@@ -309,13 +315,13 @@
 					<a name="parsetab" class="tsd-anchor"></a>
 					<h3>parse<wbr>Tab</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">parse<wbr>Tab<span class="tsd-signature-symbol">(</span>rhythm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Rhythm</span>, nPattern<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, tLibrary<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">tLibrary</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Clip</span></li>
+						<li class="tsd-signature tsd-kind-icon">parse<wbr>Tab<span class="tsd-signature-symbol">(</span>rhythm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/tab.rhythm.html" class="tsd-signature-type">Rhythm</a>, nPattern<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, tLibrary<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">tLibrary</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Clip</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/d0c4ff3/fluid-music/src/tab.ts#L69">tab.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/1d21325/fluid-music/src/tab.ts#L73">tab.ts:73</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -326,7 +332,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>rhythm: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Rhythm</span></h5>
+									<h5>rhythm: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/tab.rhythm.html" class="tsd-signature-type">Rhythm</a></h5>
 								</li>
 								<li>
 									<h5>nPattern: <span class="tsd-signature-type">string</span></h5>
@@ -364,7 +370,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/d0c4ff3/fluid-music/src/tab.ts#L252">tab.ts:252</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/1d21325/fluid-music/src/tab.ts#L256">tab.ts:256</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -374,8 +380,7 @@
 								</div>
 								<pre><code><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">input</span><span style="color: #000000"> = </span><span style="color: #A31515">&#039;a-1-bb...&#039;</span><span style="color: #000000">;</span>
 <span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">output</span><span style="color: #000000"> = [[</span><span style="color: #A31515">&#039;a&#039;</span><span style="color: #000000">,</span><span style="color: #098658">2</span><span style="color: #000000">], [</span><span style="color: #A31515">&#039;1&#039;</span><span style="color: #000000">,</span><span style="color: #098658">2</span><span style="color: #000000">], [</span><span style="color: #A31515">&#039;b&#039;</span><span style="color: #000000">,</span><span style="color: #098658">1</span><span style="color: #000000">], [</span><span style="color: #A31515">&#039;b&#039;</span><span style="color: #000000">, </span><span style="color: #098658">1</span><span style="color: #000000">], [</span><span style="color: #A31515">&#039;.&#039;</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">]];</span>
-</code></pre>
-								<p>For every new symbol, the out output lists that symbol, and the number of
+</code></pre><p>For every new symbol, the out output lists that symbol, and the number of
 								positions that that symbols is active for.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -400,7 +405,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/d0c4ff3/fluid-music/src/tab.ts#L167">tab.ts:167</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/1d21325/fluid-music/src/tab.ts#L171">tab.ts:171</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -475,6 +480,9 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/tab.rhythm.html" class="tsd-kind-icon">Rhythm</a>
+					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-namespace">
 						<a href="tab.html#reservedkeys" class="tsd-kind-icon">reserved<wbr>Keys</a>
 					</li>

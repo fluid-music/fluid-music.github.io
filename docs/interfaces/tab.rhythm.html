@@ -1,0 +1,286 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Rhythm | fluid-music - v0.9.2-0</title>
+	<meta name="description" content="Documentation for fluid-music - v0.9.2-0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">fluid-music - v0.9.2-0</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">fluid-music - v0.9.2-0</a>
+				</li>
+				<li>
+					<a href="../modules/tab.html">tab</a>
+				</li>
+				<li>
+					<a href="tab.rhythm.html">Rhythm</a>
+				</li>
+			</ul>
+			<h1>Interface Rhythm</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>A Rhythm is the parsed representation of a rhythm string.</p>
+					</div>
+					<p>Internally, the fluid tablature system uses several different formats to
+						represent discrete rhythms. End-users mostly do not need to know about
+					these, but they are useful if you are working with the source code.</p>
+					<a href="#advances" id="advances" style="color: inherit; text-decoration: none;">
+						<h3>Advances</h3>
+					</a>
+					<p><code>advances</code> is an array of numbers, with each element representing a single character in a <code>rhythm</code> string. It an intermediary form used internally. Consumers probably want to use <code>deltas</code> instead.</p>
+					<ul>
+						<li><code>[.5, 0, .5, .0]</code> is an <code>advances</code> array derived from <code>&#39;h h &#39;</code></li>
+					</ul>
+					<a href="#deltas" id="deltas" style="color: inherit; text-decoration: none;">
+						<h3>Deltas</h3>
+					</a>
+					<p><code>deltas</code> is an array of numbers, each representing the contribution of a single character in a <code>rhythm</code> string.</p>
+					<ul>
+						<li><code>[0.25, 0.25, 0.25 0.25]</code> is an <code>deltas</code> array derived from <code>&#39;h h &#39;</code></li>
+					</ul>
+					<a href="#totals" id="totals" style="color: inherit; text-decoration: none;">
+						<h3>Totals</h3>
+					</a>
+					<p><code>totals</code> is an array of durations elapsed at the end of each segment</p>
+					<ul>
+						<li><code>[.25, .5,  .75, 1]</code> is a sequence of quarter notes derived from <code>&#39;h h &#39;</code></li>
+					</ul>
+					<a href="#rhythm-object" id="rhythm-object" style="color: inherit; text-decoration: none;">
+						<h3>Rhythm Object</h3>
+					</a>
+					<p><code>parseRhythm(rhythm)</code> returns a rhythm object for a given <code>rhythm</code> string. A rhythm object has <code>.deltas</code> and <code>.totals</code> members.</p>
+					<pre><code class="language-javascript"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">rObj</span><span style="color: #000000"> = </span><span style="color: #795E26">parseRhythm</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;h h &#039;</span><span style="color: #000000">);</span>
+<span style="color: #001080">rObj</span><span style="color: #000000">.</span><span style="color: #001080">should</span><span style="color: #000000">.</span><span style="color: #795E26">deepEqual</span><span style="color: #000000">({</span>
+<span style="color: #000000">  </span><span style="color: #001080">deltas:</span><span style="color: #000000"> [</span><span style="color: #098658">.25</span><span style="color: #000000">, </span><span style="color: #098658">.25</span><span style="color: #000000">, </span><span style="color: #098658">.25</span><span style="color: #000000">, </span><span style="color: #098658">.25</span><span style="color: #000000">],</span>
+<span style="color: #000000">  </span><span style="color: #001080">totals:</span><span style="color: #000000"> [</span><span style="color: #098658">.25</span><span style="color: #000000">, </span><span style="color: #098658">.50</span><span style="color: #000000">, </span><span style="color: #098658">.75</span><span style="color: #000000">, </span><span style="color: #098658">1.0</span><span style="color: #000000">],</span>
+<span style="color: #000000">  </span><span style="color: #001080">r:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;h h &#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">});</span>
+</code></pre>
+					<a href="#rhythmic-data-type-equivalency" id="rhythmic-data-type-equivalency" style="color: inherit; text-decoration: none;">
+						<h3>Rhythmic Data Type Equivalency</h3>
+					</a>
+					<p>The following are all equivalent:</p>
+					<ul>
+						<li>A <code>&#39;h h &#39;</code> rhythm string</li>
+						<li>A <code>[.50, .00, .50, .00]</code> advances array</li>
+						<li>A <code>[.25, .25, .25, .25]</code> deltas array</li>
+						<li>A <code>[.25, .50, .75, 1.0]</code> totals array</li>
+					</ul>
+					<a href="#durations-measured-in-whole-notes" id="durations-measured-in-whole-notes" style="color: inherit; text-decoration: none;">
+						<h3>Durations measured in Whole Notes</h3>
+					</a>
+					<p>Where possible, I measure durations in whole notes. This means that an eighth note is <code>1/8</code> === <code>0.125</code>, which I find easier than measuring in quarter notes or seconds.</p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">Rhythm</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="tab.rhythm.html#deltas" class="tsd-kind-icon">deltas</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="tab.rhythm.html#r" class="tsd-kind-icon">r</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="tab.rhythm.html#totals" class="tsd-kind-icon">totals</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="deltas" class="tsd-anchor"></a>
+					<h3>deltas</h3>
+					<div class="tsd-signature tsd-kind-icon">deltas<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/1d21325/fluid-music/src/tab.ts#L13">tab.ts:13</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="r" class="tsd-anchor"></a>
+					<h3>r</h3>
+					<div class="tsd-signature tsd-kind-icon">r<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/1d21325/fluid-music/src/tab.ts#L14">tab.ts:14</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="totals" class="tsd-anchor"></a>
+					<h3>totals</h3>
+					<div class="tsd-signature tsd-kind-icon">totals<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/1d21325/fluid-music/src/tab.ts#L12">tab.ts:12</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/converters.html">converters</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/cybr.html">cybr</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/gen.html">gen</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/m.html">m</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/plugins.html">plugins</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/random.html">random</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/tlibrary.html">t<wbr>Library</a>
+					</li>
+					<li class="current tsd-kind-namespace">
+						<a href="../modules/tab.html">tab</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/techniques.html">techniques</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="tab.rhythm.html" class="tsd-kind-icon">Rhythm</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="tab.rhythm.html#deltas" class="tsd-kind-icon">deltas</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="tab.rhythm.html#r" class="tsd-kind-icon">r</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="tab.rhythm.html#totals" class="tsd-kind-icon">totals</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-variable tsd-parent-kind-namespace">
+						<a href="../modules/tab.html#reservedkeys" class="tsd-kind-icon">reserved<wbr>Keys</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/tab.html#advancearraytosegments" class="tsd-kind-icon">advance<wbr>Array<wbr>ToSegments</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/tab.html#createdynamicgetter" class="tsd-kind-icon">create<wbr>Dynamic<wbr>Getter</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/tab.html#parserhythm" class="tsd-kind-icon">parse<wbr>Rhythm</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/tab.html#parsetab" class="tsd-kind-icon">parse<wbr>Tab</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/tab.html#patterntosymbolsandcounts" class="tsd-kind-icon">pattern<wbr>ToSymbols<wbr>And<wbr>Counts</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/tab.html#rhythmtoadvancearray" class="tsd-kind-icon">rhythm<wbr>ToAdvance<wbr>Array</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

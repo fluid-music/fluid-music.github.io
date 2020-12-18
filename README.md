@@ -1,2 +1,5 @@
-# [fluid-music.github.io](https://fluid-music.github.io)
-These docs are auto-generated in the main fluid-music repo.
+# Fluid Music Node.js API Docs
+
+If you are using `fluid-music` for the first time, these two guides are likely to be more helpful than the API documentation:
+  - [Getting Started](https://github.com/CharlesHolbrow/cybr/blob/main/docs/getting-started.md)
+  - [Fluid Music Concepts](https://github.com/CharlesHolbrow/cybr/blob/main/docs/getting-started.md)

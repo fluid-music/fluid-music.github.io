@@ -88,6 +88,8 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="fluidsession.html#bpm" class="tsd-kind-icon">bpm</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="fluidsession.html#editcursortime" class="tsd-kind-icon">edit<wbr>Cursor<wbr>Time</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="fluidsession.html#loopenabled" class="tsd-kind-icon">loop<wbr>Enabled</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="fluidsession.html#loopregion" class="tsd-kind-icon">loop<wbr>Region</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="fluidsession.html#regions" class="tsd-kind-icon">regions</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="fluidsession.html#scoreconfig" class="tsd-kind-icon">score<wbr>Config</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="fluidsession.html#tracks" class="tsd-kind-icon">tracks</a></li>
@@ -102,11 +104,13 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fluidsession.html#getorcreatetrackbyname" class="tsd-kind-icon">get<wbr>OrCreate<wbr>Track<wbr>ByName</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fluidsession.html#gettrackbyname" class="tsd-kind-icon">get<wbr>Track<wbr>ByName</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fluidsession.html#insertscore" class="tsd-kind-icon">insert<wbr>Score</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fluidsession.html#play" class="tsd-kind-icon">play</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fluidsession.html#processevents" class="tsd-kind-icon">process<wbr>Events</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fluidsession.html#resolvesends" class="tsd-kind-icon">resolve<wbr>Sends</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fluidsession.html#resolvesidechainreceives" class="tsd-kind-icon">resolve<wbr>Sidechain<wbr>Receives</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fluidsession.html#saveasreaperfile" class="tsd-kind-icon">save<wbr>AsReaper<wbr>File</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fluidsession.html#saveastracktionfile" class="tsd-kind-icon">save<wbr>AsTracktion<wbr>File</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fluidsession.html#send" class="tsd-kind-icon">send</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fluidsession.html#timesecondstowholenotes" class="tsd-kind-icon">time<wbr>Seconds<wbr>ToWhole<wbr>Notes</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fluidsession.html#timewholenotestoseconds" class="tsd-kind-icon">time<wbr>Whole<wbr>Notes<wbr>ToSeconds</a></li>
 							</ul>
@@ -126,7 +130,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/97ea3ec/fluid-music/src/FluidSession.ts#L16">FluidSession.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/FluidSession.ts#L29">FluidSession.ts:29</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -151,7 +155,7 @@
 					<div class="tsd-signature tsd-kind-icon">bpm<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 120</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/97ea3ec/fluid-music/src/FluidSession.ts#L35">FluidSession.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/FluidSession.ts#L58">FluidSession.ts:58</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -161,7 +165,7 @@
 					<div class="tsd-signature tsd-kind-icon">edit<wbr>Cursor<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/97ea3ec/fluid-music/src/FluidSession.ts#L40">FluidSession.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/FluidSession.ts#L63">FluidSession.ts:63</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -171,12 +175,37 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="loopenabled" class="tsd-anchor"></a>
+					<h3>loop<wbr>Enabled</h3>
+					<div class="tsd-signature tsd-kind-icon">loop<wbr>Enabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/FluidSession.ts#L71">FluidSession.ts:71</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="loopregion" class="tsd-anchor"></a>
+					<h3>loop<wbr>Region</h3>
+					<div class="tsd-signature tsd-kind-icon">loop<wbr>Region<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/FluidSession.ts#L66">FluidSession.ts:66</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Loop region, measured in whole notes</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="regions" class="tsd-anchor"></a>
 					<h3>regions</h3>
 					<div class="tsd-signature tsd-kind-icon">regions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/97ea3ec/fluid-music/src/FluidSession.ts#L37">FluidSession.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/FluidSession.ts#L60">FluidSession.ts:60</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -186,7 +215,7 @@
 					<div class="tsd-signature tsd-kind-icon">score<wbr>Config<span class="tsd-signature-symbol">:</span> <a href="../interfaces/scoreconfig.html" class="tsd-signature-type" data-tsd-kind="Interface">ScoreConfig</a><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/97ea3ec/fluid-music/src/FluidSession.ts#L34">FluidSession.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/FluidSession.ts#L57">FluidSession.ts:57</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -196,7 +225,7 @@
 					<div class="tsd-signature tsd-kind-icon">tracks<span class="tsd-signature-symbol">:</span> <a href="fluidtrack.html" class="tsd-signature-type" data-tsd-kind="Class">FluidTrack</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/97ea3ec/fluid-music/src/FluidSession.ts#L36">FluidSession.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/FluidSession.ts#L59">FluidSession.ts:59</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -213,7 +242,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/97ea3ec/fluid-music/src/FluidSession.ts#L247">FluidSession.ts:247</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/FluidSession.ts#L278">FluidSession.ts:278</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="fluidsession.html" class="tsd-signature-type" data-tsd-kind="Class">FluidSession</a></h4>
@@ -230,7 +259,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/97ea3ec/fluid-music/src/FluidSession.ts#L63">FluidSession.ts:63</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/FluidSession.ts#L94">FluidSession.ts:94</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -305,7 +334,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/97ea3ec/fluid-music/src/FluidSession.ts#L112">FluidSession.ts:112</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/FluidSession.ts#L143">FluidSession.ts:143</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -341,7 +370,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/97ea3ec/fluid-music/src/FluidSession.ts#L92">FluidSession.ts:92</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/FluidSession.ts#L123">FluidSession.ts:123</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -364,7 +393,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/97ea3ec/fluid-music/src/FluidSession.ts#L84">FluidSession.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/FluidSession.ts#L115">FluidSession.ts:115</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -387,7 +416,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/97ea3ec/fluid-music/src/FluidSession.ts#L134">FluidSession.ts:134</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/FluidSession.ts#L165">FluidSession.ts:165</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -418,6 +447,45 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="play" class="tsd-anchor"></a>
+					<h3>play</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">play<span class="tsd-signature-symbol">(</span>startTime<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, client<span class="tsd-signature-symbol">?: </span><a href="cybr.ipcclient.html" class="tsd-signature-type" data-tsd-kind="Class">IpcClient</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/FluidSession.ts#L385">FluidSession.ts:385</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Send the session to the cybr server and begin playback on the server. If
+									the server already contains an active session, it will be replaced.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>startTime: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The time to start playback, measured in whole notes</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> client: <a href="cybr.ipcclient.html" class="tsd-signature-type" data-tsd-kind="Class">IpcClient</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An optional cybr IpcClient. When you do provide a client,
+										that client be configured with <code>keepOpen=true</code>.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="processevents" class="tsd-anchor"></a>
 					<h3>process<wbr>Events</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -427,7 +495,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/97ea3ec/fluid-music/src/FluidSession.ts#L216">FluidSession.ts:216</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/FluidSession.ts#L247">FluidSession.ts:247</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -456,7 +524,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/97ea3ec/fluid-music/src/FluidSession.ts#L153">FluidSession.ts:153</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/FluidSession.ts#L184">FluidSession.ts:184</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -488,7 +556,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/97ea3ec/fluid-music/src/FluidSession.ts#L179">FluidSession.ts:179</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/FluidSession.ts#L210">FluidSession.ts:210</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -517,7 +585,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/97ea3ec/fluid-music/src/FluidSession.ts#L327">FluidSession.ts:327</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/FluidSession.ts#L409">FluidSession.ts:409</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -558,7 +626,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/97ea3ec/fluid-music/src/FluidSession.ts#L288">FluidSession.ts:288</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/FluidSession.ts#L320">FluidSession.ts:320</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -573,7 +641,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>filename: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &#x27;fluid&#x27;</span></h5>
+									<h5>filename: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &#x27;session&#x27;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>can be absolute or relative to the working directory. The
 										<code>.tracktionedit</code> file extension will be added if it is not present</p>
@@ -583,7 +651,49 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> client: <a href="cybr.ipcclient.html" class="tsd-signature-type" data-tsd-kind="Class">IpcClient</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>an <a href="cybr.ipcclient.html">IpcClient</a> will be created (and closed) automatically
-										when not provided</p>
+											when not provided. When you do provide a client, that client must be
+										configured with <code>keepOpen=true</code>.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="send" class="tsd-anchor"></a>
+					<h3>send</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">send<span class="tsd-signature-symbol">(</span>filename<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, client<span class="tsd-signature-symbol">?: </span><a href="cybr.ipcclient.html" class="tsd-signature-type" data-tsd-kind="Class">IpcClient</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/FluidSession.ts#L350">FluidSession.ts:350</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Send the entire session to the cybr server. If there is already an active
+									session in the server, it will be replaced.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>filename: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &#x27;session&#x27;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>can be absolute or relative to the working directory. The
+										<code>.tracktionedit</code>. This file extension will be added if it is not present</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> client: <a href="cybr.ipcclient.html" class="tsd-signature-type" data-tsd-kind="Class">IpcClient</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>an <a href="cybr.ipcclient.html">IpcClient</a> will be created (and closed) automatically
+											when not provided. When you do provide a client, that client must be
+										configured with <code>keepOpen=true</code>.</p>
 									</div>
 								</li>
 							</ul>
@@ -601,7 +711,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/97ea3ec/fluid-music/src/FluidSession.ts#L204">FluidSession.ts:204</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/FluidSession.ts#L235">FluidSession.ts:235</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -624,7 +734,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/97ea3ec/fluid-music/src/FluidSession.ts#L200">FluidSession.ts:200</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/FluidSession.ts#L231">FluidSession.ts:231</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -682,6 +792,12 @@
 								<a href="fluidsession.html#editcursortime" class="tsd-kind-icon">edit<wbr>Cursor<wbr>Time</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="fluidsession.html#loopenabled" class="tsd-kind-icon">loop<wbr>Enabled</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="fluidsession.html#loopregion" class="tsd-kind-icon">loop<wbr>Region</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="fluidsession.html#regions" class="tsd-kind-icon">regions</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
@@ -709,6 +825,9 @@
 								<a href="fluidsession.html#insertscore" class="tsd-kind-icon">insert<wbr>Score</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="fluidsession.html#play" class="tsd-kind-icon">play</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="fluidsession.html#processevents" class="tsd-kind-icon">process<wbr>Events</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -722,6 +841,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="fluidsession.html#saveastracktionfile" class="tsd-kind-icon">save<wbr>AsTracktion<wbr>File</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="fluidsession.html#send" class="tsd-kind-icon">send</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="fluidsession.html#timesecondstowholenotes" class="tsd-kind-icon">time<wbr>Seconds<wbr>ToWhole<wbr>Notes</a>

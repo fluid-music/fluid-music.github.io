@@ -88,6 +88,9 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="sessionconfig.html#bpm" class="tsd-kind-icon">bpm</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="sessionconfig.html#d" class="tsd-kind-icon">d</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="sessionconfig.html#dlibrary" class="tsd-kind-icon">d<wbr>Library</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="sessionconfig.html#loopduration" class="tsd-kind-icon">loop<wbr>Duration</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="sessionconfig.html#loopenabled" class="tsd-kind-icon">loop<wbr>Enabled</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="sessionconfig.html#loopstarttime" class="tsd-kind-icon">loop<wbr>Start<wbr>Time</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="sessionconfig.html#r" class="tsd-kind-icon">r</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="sessionconfig.html#starttime" class="tsd-kind-icon">start<wbr>Time</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="sessionconfig.html#tlibrary" class="tsd-kind-icon">t<wbr>Library</a></li>
@@ -105,9 +108,14 @@
 					<div class="tsd-signature tsd-kind-icon">bpm<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/97ea3ec/fluid-music/src/FluidSession.ts#L13">FluidSession.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/FluidSession.ts#L14">FluidSession.ts:14</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Beats per minute</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="d" class="tsd-anchor"></a>
@@ -116,7 +124,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="scoreconfig.html">ScoreConfig</a>.<a href="scoreconfig.html#d">d</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/97ea3ec/fluid-music/src/fluid-interfaces.ts#L46">fluid-interfaces.ts:46</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/fluid-interfaces.ts#L46">fluid-interfaces.ts:46</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -127,9 +135,55 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="scoreconfig.html">ScoreConfig</a>.<a href="scoreconfig.html#dlibrary">dLibrary</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/97ea3ec/fluid-music/src/fluid-interfaces.ts#L44">fluid-interfaces.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/fluid-interfaces.ts#L44">fluid-interfaces.ts:44</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="loopduration" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> loop<wbr>Duration</h3>
+					<div class="tsd-signature tsd-kind-icon">loop<wbr>Duration<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/FluidSession.ts#L26">FluidSession.ts:26</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Loop region duration, specified in whole notes. Automatically enables
+							looping unless <code>loopEnabled: false</code> is explicit</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="loopenabled" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> loop<wbr>Enabled</h3>
+					<div class="tsd-signature tsd-kind-icon">loop<wbr>Enabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/FluidSession.ts#L17">FluidSession.ts:17</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Looping is disabled by default unless you specify a <code>loopStartTime</code></p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="loopstarttime" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> loop<wbr>Start<wbr>Time</h3>
+					<div class="tsd-signature tsd-kind-icon">loop<wbr>Start<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/FluidSession.ts#L20">FluidSession.ts:20</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Loop region start time, specified in whole notes</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="r" class="tsd-anchor"></a>
@@ -138,7 +192,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="scoreconfig.html">ScoreConfig</a>.<a href="scoreconfig.html#r">r</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/97ea3ec/fluid-music/src/fluid-interfaces.ts#L45">fluid-interfaces.ts:45</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/fluid-interfaces.ts#L45">fluid-interfaces.ts:45</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -149,7 +203,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="scoreconfig.html">ScoreConfig</a>.<a href="scoreconfig.html#starttime">startTime</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/97ea3ec/fluid-music/src/fluid-interfaces.ts#L48">fluid-interfaces.ts:48</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/fluid-interfaces.ts#L48">fluid-interfaces.ts:48</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -160,7 +214,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="scoreconfig.html">ScoreConfig</a>.<a href="scoreconfig.html#tlibrary">tLibrary</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/97ea3ec/fluid-music/src/fluid-interfaces.ts#L43">fluid-interfaces.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/fluid-interfaces.ts#L43">fluid-interfaces.ts:43</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -171,7 +225,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="scoreconfig.html">ScoreConfig</a>.<a href="scoreconfig.html#trackkey">trackKey</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/97ea3ec/fluid-music/src/fluid-interfaces.ts#L47">fluid-interfaces.ts:47</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/fluid-interfaces.ts#L47">fluid-interfaces.ts:47</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -230,6 +284,15 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="sessionconfig.html#dlibrary" class="tsd-kind-icon">d<wbr>Library</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="sessionconfig.html#loopduration" class="tsd-kind-icon">loop<wbr>Duration</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="sessionconfig.html#loopenabled" class="tsd-kind-icon">loop<wbr>Enabled</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="sessionconfig.html#loopstarttime" class="tsd-kind-icon">loop<wbr>Start<wbr>Time</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="sessionconfig.html#r" class="tsd-kind-icon">r</a>

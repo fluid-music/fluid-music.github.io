@@ -104,13 +104,12 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fluidsession.html#getorcreatetrackbyname" class="tsd-kind-icon">get<wbr>OrCreate<wbr>Track<wbr>ByName</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fluidsession.html#gettrackbyname" class="tsd-kind-icon">get<wbr>Track<wbr>ByName</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fluidsession.html#insertscore" class="tsd-kind-icon">insert<wbr>Score</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fluidsession.html#play" class="tsd-kind-icon">play</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fluidsession.html#processevents" class="tsd-kind-icon">process<wbr>Events</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fluidsession.html#resolvesends" class="tsd-kind-icon">resolve<wbr>Sends</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fluidsession.html#resolvesidechainreceives" class="tsd-kind-icon">resolve<wbr>Sidechain<wbr>Receives</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fluidsession.html#saveasreaperfile" class="tsd-kind-icon">save<wbr>AsReaper<wbr>File</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fluidsession.html#saveastracktionfile" class="tsd-kind-icon">save<wbr>AsTracktion<wbr>File</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fluidsession.html#send" class="tsd-kind-icon">send</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fluidsession.html#sendtoserver" class="tsd-kind-icon">send<wbr>ToServer</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fluidsession.html#timesecondstowholenotes" class="tsd-kind-icon">time<wbr>Seconds<wbr>ToWhole<wbr>Notes</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="fluidsession.html#timewholenotestoseconds" class="tsd-kind-icon">time<wbr>Whole<wbr>Notes<wbr>ToSeconds</a></li>
 							</ul>
@@ -447,45 +446,6 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="play" class="tsd-anchor"></a>
-					<h3>play</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">play<span class="tsd-signature-symbol">(</span>startTime<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, client<span class="tsd-signature-symbol">?: </span><a href="cybr.ipcclient.html" class="tsd-signature-type" data-tsd-kind="Class">IpcClient</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/FluidSession.ts#L385">FluidSession.ts:385</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Send the session to the cybr server and begin playback on the server. If
-									the server already contains an active session, it will be replaced.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>startTime: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The time to start playback, measured in whole notes</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> client: <a href="cybr.ipcclient.html" class="tsd-signature-type" data-tsd-kind="Class">IpcClient</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>An optional cybr IpcClient. When you do provide a client,
-										that client be configured with <code>keepOpen=true</code>.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="processevents" class="tsd-anchor"></a>
 					<h3>process<wbr>Events</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -585,7 +545,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/FluidSession.ts#L409">FluidSession.ts:409</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/aab66c2/fluid-music/src/FluidSession.ts#L386">FluidSession.ts:386</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -661,10 +621,10 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="send" class="tsd-anchor"></a>
-					<h3>send</h3>
+					<a name="sendtoserver" class="tsd-anchor"></a>
+					<h3>send<wbr>ToServer</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">send<span class="tsd-signature-symbol">(</span>filename<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, client<span class="tsd-signature-symbol">?: </span><a href="cybr.ipcclient.html" class="tsd-signature-type" data-tsd-kind="Class">IpcClient</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">send<wbr>ToServer<span class="tsd-signature-symbol">(</span>filename<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, client<span class="tsd-signature-symbol">?: </span><a href="cybr.ipcclient.html" class="tsd-signature-type" data-tsd-kind="Class">IpcClient</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -675,8 +635,8 @@
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Send the entire session to the cybr server. If there is already an active
-									session in the server, it will be replaced.</p>
+									<p>Send the entire session to the cybr server. If the server already has an
+									active session, it will be replaced by this session.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -825,9 +785,6 @@
 								<a href="fluidsession.html#insertscore" class="tsd-kind-icon">insert<wbr>Score</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="fluidsession.html#play" class="tsd-kind-icon">play</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="fluidsession.html#processevents" class="tsd-kind-icon">process<wbr>Events</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -843,7 +800,7 @@
 								<a href="fluidsession.html#saveastracktionfile" class="tsd-kind-icon">save<wbr>AsTracktion<wbr>File</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="fluidsession.html#send" class="tsd-kind-icon">send</a>
+								<a href="fluidsession.html#sendtoserver" class="tsd-kind-icon">send<wbr>ToServer</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="fluidsession.html#timesecondstowholenotes" class="tsd-kind-icon">time<wbr>Seconds<wbr>ToWhole<wbr>Notes</a>

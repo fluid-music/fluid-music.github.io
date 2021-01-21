@@ -83,14 +83,16 @@
 </code></pre>
 					<p>Using AFReverse as a technique will insert a reversed copy of the input audio
 						file into the session. The reversed copy will be aligned such that the onset
-						of the sound corresponds with the end of the triggering event, so in the
-						hypothetical example below, the &quot;Onset&quot; of the sound would alight with the
-						second beat in the measure. In practice, when you want to just insert a
-						reversed audio file you can ignore this detail. However, if you want to
-						precisely position the attack of a reversed sound, it can be helpful to
-					specify a non-zero <code>onsetSeconds</code> in the AFReverse constructor.</p>
-					<pre><code><span style="color: #001080">Example</span><span style="color: #000000"> Rhythm:  </span><span style="color: #A31515">&#039;1 + 2 + &#039;</span>
-<span style="color: #001080">AFReverse</span><span style="color: #000000"> Event: </span><span style="color: #A31515">&#039;  a--   &#039;</span>
+					of the sound corresponds with the end of the triggering event.</p>
+					<p>This means that In the hypothetical example below, the onset of the sound
+						would alight with the second beat in the measure. In practice, when you want
+						to just insert a reversed audio file you can ignore this detail. However, if
+						you want to precisely position the attack of a reversed sound, it can be
+					helpful to specify a non-zero <code>onsetSeconds</code> in the AFReverse constructor.</p>
+					<pre><code><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">score</span><span style="color: #000000"> = {</span>
+<span style="color: #000000">  </span><span style="color: #001080">r:</span><span style="color: #000000">      </span><span style="color: #A31515">&#039;1 + 2 + &#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">cymbal:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039; a--    &#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">}</span>
 </code></pre>
 				</div>
 			</section>
@@ -158,14 +160,13 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="techniques.afonset.html">AFOnset</a>.<a href="techniques.afonset.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/2d8754a/fluid-music/src/techniques/audio-file.ts#L99">techniques/audio-file.ts:99</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/fad5cb6/fluid-music/src/techniques/audio-file.ts#L99">techniques/audio-file.ts:99</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Note that <code>.fadeInSeconds</code> and <code>.fadeOutSeconds</code>, on the input file will be
-										swapped when the audio file is reversed.swapped when the audio file is
-									reversed.</p>
+									swapped when the audio file is reversed.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -194,7 +195,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="techniques.afonset.html">AFOnset</a>.<a href="techniques.afonset.html#audiofile">audioFile</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/2d8754a/fluid-music/src/techniques/audio-file.ts#L99">techniques/audio-file.ts:99</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/fad5cb6/fluid-music/src/techniques/audio-file.ts#L99">techniques/audio-file.ts:99</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -212,7 +213,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/2d8754a/fluid-music/src/techniques/audio-file.ts#L147">techniques/audio-file.ts:147</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/fad5cb6/fluid-music/src/techniques/audio-file.ts#L146">techniques/audio-file.ts:146</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -226,7 +227,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/2d8754a/fluid-music/src/techniques/audio-file.ts#L152">techniques/audio-file.ts:152</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/fad5cb6/fluid-music/src/techniques/audio-file.ts#L151">techniques/audio-file.ts:151</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -256,7 +257,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/2d8754a/fluid-music/src/techniques/audio-file.ts#L160">techniques/audio-file.ts:160</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/fad5cb6/fluid-music/src/techniques/audio-file.ts#L159">techniques/audio-file.ts:159</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -270,7 +271,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/2d8754a/fluid-music/src/techniques/audio-file.ts#L165">techniques/audio-file.ts:165</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/fad5cb6/fluid-music/src/techniques/audio-file.ts#L164">techniques/audio-file.ts:164</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -303,7 +304,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="techniques.afonset.html">AFOnset</a>.<a href="techniques.afonset.html#use">use</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/2d8754a/fluid-music/src/techniques/audio-file.ts#L200">techniques/audio-file.ts:200</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/fad5cb6/fluid-music/src/techniques/audio-file.ts#L201">techniques/audio-file.ts:201</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>

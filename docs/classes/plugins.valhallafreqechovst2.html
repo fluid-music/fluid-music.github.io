@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ValhallaFreqEchoVst2 | fluid-music - v0.9.3</title>
-	<meta name="description" content="Documentation for fluid-music - v0.9.3">
+	<title>ValhallaFreqEchoVst2 | fluid-music - v0.9.4-beta.0</title>
+	<meta name="description" content="Documentation for fluid-music - v0.9.4-beta.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 	<script async src="../assets/js/search.js" id="search-script"></script>
@@ -23,7 +23,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">fluid-music - v0.9.3</a>
+					<a href="../index.html" class="title">fluid-music - v0.9.4-beta.0</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -52,7 +52,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../modules.html">fluid-music - v0.9.3</a>
+					<a href="../modules.html">fluid-music - v0.9.4-beta.0</a>
 				</li>
 				<li>
 					<a href="../modules/plugins.html">plugins</a>
@@ -95,13 +95,17 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="plugins.valhallafreqechovst2.html#automation" class="tsd-kind-icon">automation</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="plugins.valhallafreqechovst2.html#issynth" class="tsd-kind-icon">is<wbr>Synth</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="plugins.valhallafreqechovst2.html#makeautomation" class="tsd-kind-icon">make<wbr>Automation</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="plugins.valhallafreqechovst2.html#numaudioinputchannels" class="tsd-kind-icon">num<wbr>Audio<wbr>Input<wbr>Channels</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="plugins.valhallafreqechovst2.html#numaudiooutputchannels" class="tsd-kind-icon">num<wbr>Audio<wbr>Output<wbr>Channels</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="plugins.valhallafreqechovst2.html#parameterlibrary" class="tsd-kind-icon">parameter<wbr>Library</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="plugins.valhallafreqechovst2.html#parameters" class="tsd-kind-icon">parameters</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="plugins.valhallafreqechovst2.html#pluginname" class="tsd-kind-icon">plugin<wbr>Name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="plugins.valhallafreqechovst2.html#plugintype" class="tsd-kind-icon">plugin<wbr>Type</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="plugins.valhallafreqechovst2.html#sidechainreceive" class="tsd-kind-icon">sidechain<wbr>Receive</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="plugins.valhallafreqechovst2.html#unresolvedsidechainreceive" class="tsd-kind-icon">unresolved<wbr>Sidechain<wbr>Receive</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="plugins.valhallafreqechovst2.html#vst2" class="tsd-kind-icon">vst2</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="plugins.valhallafreqechovst2.html#plugintype-1" class="tsd-kind-icon">Plugin<wbr>Type</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="plugins.valhallafreqechovst2.html#makeautomation-1" class="tsd-kind-icon">make<wbr>Automation</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="plugins.valhallafreqechovst2.html#parameterlibrary-1" class="tsd-kind-icon">parameter<wbr>Library</a></li>
@@ -132,7 +136,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fluidplugin.html">FluidPlugin</a>.<a href="fluidplugin.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L99">plugin-adapters/valhalla-freq-echo-vst2.ts:99</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L99">plugin-adapters/valhalla-freq-echo-vst2.ts:99</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -155,9 +159,25 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="fluidplugin.html">FluidPlugin</a>.<a href="fluidplugin.html#automation">automation</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/FluidPlugin.ts#L120">FluidPlugin.ts:120</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/FluidPlugin.ts#L120">FluidPlugin.ts:120</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="issynth" class="tsd-anchor"></a>
+					<h3>is<wbr>Synth</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Synth<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="fluidplugin.html">FluidPlugin</a>.<a href="fluidplugin.html#issynth">isSynth</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/FluidPlugin.ts#L145">FluidPlugin.ts:145</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Is this plugin a synth or an effect (does it accept midi input)?</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
 					<a name="makeautomation" class="tsd-anchor"></a>
@@ -166,7 +186,7 @@
 					<aside class="tsd-sources">
 						<p>Overrides <a href="fluidplugin.html">FluidPlugin</a>.<a href="fluidplugin.html#makeautomation">makeAutomation</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L105">plugin-adapters/valhalla-freq-echo-vst2.ts:105</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L112">plugin-adapters/valhalla-freq-echo-vst2.ts:112</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -181,7 +201,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L50">plugin-adapters/valhalla-freq-echo-vst2.ts:50</a></li>
+												<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L50">plugin-adapters/valhalla-freq-echo-vst2.ts:50</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -206,7 +226,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L50">plugin-adapters/valhalla-freq-echo-vst2.ts:50</a></li>
+												<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L50">plugin-adapters/valhalla-freq-echo-vst2.ts:50</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -231,7 +251,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L66">plugin-adapters/valhalla-freq-echo-vst2.ts:66</a></li>
+												<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L66">plugin-adapters/valhalla-freq-echo-vst2.ts:66</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -256,7 +276,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L66">plugin-adapters/valhalla-freq-echo-vst2.ts:66</a></li>
+												<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L66">plugin-adapters/valhalla-freq-echo-vst2.ts:66</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -281,7 +301,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L82">plugin-adapters/valhalla-freq-echo-vst2.ts:82</a></li>
+												<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L82">plugin-adapters/valhalla-freq-echo-vst2.ts:82</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -306,7 +326,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L82">plugin-adapters/valhalla-freq-echo-vst2.ts:82</a></li>
+												<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L82">plugin-adapters/valhalla-freq-echo-vst2.ts:82</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -331,7 +351,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L74">plugin-adapters/valhalla-freq-echo-vst2.ts:74</a></li>
+												<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L74">plugin-adapters/valhalla-freq-echo-vst2.ts:74</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -356,7 +376,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L74">plugin-adapters/valhalla-freq-echo-vst2.ts:74</a></li>
+												<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L74">plugin-adapters/valhalla-freq-echo-vst2.ts:74</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -381,7 +401,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L42">plugin-adapters/valhalla-freq-echo-vst2.ts:42</a></li>
+												<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L42">plugin-adapters/valhalla-freq-echo-vst2.ts:42</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -406,7 +426,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L42">plugin-adapters/valhalla-freq-echo-vst2.ts:42</a></li>
+												<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L42">plugin-adapters/valhalla-freq-echo-vst2.ts:42</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -431,7 +451,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L90">plugin-adapters/valhalla-freq-echo-vst2.ts:90</a></li>
+												<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L90">plugin-adapters/valhalla-freq-echo-vst2.ts:90</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -456,7 +476,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L90">plugin-adapters/valhalla-freq-echo-vst2.ts:90</a></li>
+												<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L90">plugin-adapters/valhalla-freq-echo-vst2.ts:90</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -481,7 +501,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L58">plugin-adapters/valhalla-freq-echo-vst2.ts:58</a></li>
+												<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L58">plugin-adapters/valhalla-freq-echo-vst2.ts:58</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -506,7 +526,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L58">plugin-adapters/valhalla-freq-echo-vst2.ts:58</a></li>
+												<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L58">plugin-adapters/valhalla-freq-echo-vst2.ts:58</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -531,7 +551,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L34">plugin-adapters/valhalla-freq-echo-vst2.ts:34</a></li>
+												<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L34">plugin-adapters/valhalla-freq-echo-vst2.ts:34</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -556,7 +576,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L34">plugin-adapters/valhalla-freq-echo-vst2.ts:34</a></li>
+												<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L34">plugin-adapters/valhalla-freq-echo-vst2.ts:34</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -575,6 +595,28 @@
 						</ul>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="numaudioinputchannels" class="tsd-anchor"></a>
+					<h3>num<wbr>Audio<wbr>Input<wbr>Channels</h3>
+					<div class="tsd-signature tsd-kind-icon">num<wbr>Audio<wbr>Input<wbr>Channels<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 2</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="fluidplugin.html">FluidPlugin</a>.<a href="fluidplugin.html#numaudioinputchannels">numAudioInputChannels</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/FluidPlugin.ts#L146">FluidPlugin.ts:146</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="numaudiooutputchannels" class="tsd-anchor"></a>
+					<h3>num<wbr>Audio<wbr>Output<wbr>Channels</h3>
+					<div class="tsd-signature tsd-kind-icon">num<wbr>Audio<wbr>Output<wbr>Channels<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 2</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="fluidplugin.html">FluidPlugin</a>.<a href="fluidplugin.html#numaudiooutputchannels">numAudioOutputChannels</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/FluidPlugin.ts#L147">FluidPlugin.ts:147</a></li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
 					<a name="parameterlibrary" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> parameter<wbr>Library</h3>
@@ -582,7 +624,7 @@
 					<aside class="tsd-sources">
 						<p>Overrides <a href="fluidplugin.html">FluidPlugin</a>.<a href="fluidplugin.html#parameterlibrary">parameterLibrary</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L104">plugin-adapters/valhalla-freq-echo-vst2.ts:104</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L111">plugin-adapters/valhalla-freq-echo-vst2.ts:111</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -861,7 +903,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="fluidplugin.html">FluidPlugin</a>.<a href="fluidplugin.html#sidechainreceive">sidechainReceive</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/FluidPlugin.ts#L123">FluidPlugin.ts:123</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/FluidPlugin.ts#L149">FluidPlugin.ts:149</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -872,9 +914,57 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="fluidplugin.html">FluidPlugin</a>.<a href="fluidplugin.html#unresolvedsidechainreceive">unresolvedSidechainReceive</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/FluidPlugin.ts#L124">FluidPlugin.ts:124</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/FluidPlugin.ts#L150">FluidPlugin.ts:150</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="vst2" class="tsd-anchor"></a>
+					<h3>vst2</h3>
+					<div class="tsd-signature tsd-kind-icon">vst2<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>presetBase64<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>uid<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>vendor<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="fluidplugin.html">FluidPlugin</a>.<a href="fluidplugin.html#vst2">vst2</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/FluidPlugin.ts#L127">FluidPlugin.ts:127</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>VST2 plugins may specify a some additional parameters in this property.
+							It will be empty for non-vst2 plugins.</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> preset<wbr>Base64<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>A .fxp vst2 preset preset file, base64 encoded. This is the initial
+											state of the plugin will be applied before any additional configuration
+										specified within the plugin&#39;s <a href="fluidplugin.html#parameters">FluidPlugin.parameters</a> property.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> uid<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The 32-bit plugin VST2 plugin UID (if known)</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> vendor<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>VST2 plugins report a vendor name</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 					<a name="plugintype-1" class="tsd-anchor"></a>
@@ -883,7 +973,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="fluidplugin.html">FluidPlugin</a>.<a href="fluidplugin.html#plugintype-1">PluginType</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/FluidPlugin.ts#L117">FluidPlugin.ts:117</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/FluidPlugin.ts#L117">FluidPlugin.ts:117</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -893,7 +983,7 @@
 					<div class="tsd-signature tsd-kind-icon">make<wbr>Automation<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>delayMs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>delayMs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>feedbackPercent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>feedbackPercent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>highCutHz<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>highCutHz<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>lowCutHz<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>lowCutHz<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>shiftHz<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>shiftHz<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>stereo<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>stereo<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>sync<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>sync<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>wetDryPercent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>wetDryPercent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L109">plugin-adapters/valhalla-freq-echo-vst2.ts:109</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L116">plugin-adapters/valhalla-freq-echo-vst2.ts:116</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -908,7 +998,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L50">plugin-adapters/valhalla-freq-echo-vst2.ts:50</a></li>
+												<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L50">plugin-adapters/valhalla-freq-echo-vst2.ts:50</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -933,7 +1023,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L50">plugin-adapters/valhalla-freq-echo-vst2.ts:50</a></li>
+												<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L50">plugin-adapters/valhalla-freq-echo-vst2.ts:50</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -958,7 +1048,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L66">plugin-adapters/valhalla-freq-echo-vst2.ts:66</a></li>
+												<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L66">plugin-adapters/valhalla-freq-echo-vst2.ts:66</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -983,7 +1073,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L66">plugin-adapters/valhalla-freq-echo-vst2.ts:66</a></li>
+												<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L66">plugin-adapters/valhalla-freq-echo-vst2.ts:66</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1008,7 +1098,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L82">plugin-adapters/valhalla-freq-echo-vst2.ts:82</a></li>
+												<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L82">plugin-adapters/valhalla-freq-echo-vst2.ts:82</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1033,7 +1123,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L82">plugin-adapters/valhalla-freq-echo-vst2.ts:82</a></li>
+												<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L82">plugin-adapters/valhalla-freq-echo-vst2.ts:82</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1058,7 +1148,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L74">plugin-adapters/valhalla-freq-echo-vst2.ts:74</a></li>
+												<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L74">plugin-adapters/valhalla-freq-echo-vst2.ts:74</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1083,7 +1173,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L74">plugin-adapters/valhalla-freq-echo-vst2.ts:74</a></li>
+												<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L74">plugin-adapters/valhalla-freq-echo-vst2.ts:74</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1108,7 +1198,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L42">plugin-adapters/valhalla-freq-echo-vst2.ts:42</a></li>
+												<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L42">plugin-adapters/valhalla-freq-echo-vst2.ts:42</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1133,7 +1223,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L42">plugin-adapters/valhalla-freq-echo-vst2.ts:42</a></li>
+												<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L42">plugin-adapters/valhalla-freq-echo-vst2.ts:42</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1158,7 +1248,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L90">plugin-adapters/valhalla-freq-echo-vst2.ts:90</a></li>
+												<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L90">plugin-adapters/valhalla-freq-echo-vst2.ts:90</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1183,7 +1273,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L90">plugin-adapters/valhalla-freq-echo-vst2.ts:90</a></li>
+												<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L90">plugin-adapters/valhalla-freq-echo-vst2.ts:90</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1208,7 +1298,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L58">plugin-adapters/valhalla-freq-echo-vst2.ts:58</a></li>
+												<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L58">plugin-adapters/valhalla-freq-echo-vst2.ts:58</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1233,7 +1323,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L58">plugin-adapters/valhalla-freq-echo-vst2.ts:58</a></li>
+												<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L58">plugin-adapters/valhalla-freq-echo-vst2.ts:58</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1258,7 +1348,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L34">plugin-adapters/valhalla-freq-echo-vst2.ts:34</a></li>
+												<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L34">plugin-adapters/valhalla-freq-echo-vst2.ts:34</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1283,7 +1373,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L34">plugin-adapters/valhalla-freq-echo-vst2.ts:34</a></li>
+												<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L34">plugin-adapters/valhalla-freq-echo-vst2.ts:34</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1308,7 +1398,7 @@
 					<div class="tsd-signature tsd-kind-icon">parameter<wbr>Library<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>delayMs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>isLinear<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>powerFuncB<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>range<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">; </span>units<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>feedbackPercent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>isLinear<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>range<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">; </span>units<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>highCutHz<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>isLinear<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>range<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">; </span>units<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>lowCutHz<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>isLinear<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>range<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">; </span>units<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>shiftHz<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>isLinear<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>range<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">; </span>units<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>stereo<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>choices<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>mono<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>stereo<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>isLinear<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>sync<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>choices<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>1/16<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>1/16.<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>1/16T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>1/32<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>1/32.<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>1/32T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>1/4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>1/4.<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>1/4T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>1/64<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>1/64.<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>1/64T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>1/8<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>1/8.<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>1/8T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>2/4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>2/4.<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>2/4T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>4/4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>4/4.<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>4/4T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>8/4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>free<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>isLinear<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>range<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>wetDryPercent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>isLinear<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>range<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">; </span>units<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L108">plugin-adapters/valhalla-freq-echo-vst2.ts:108</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/plugin-adapters/valhalla-freq-echo-vst2.ts#L115">plugin-adapters/valhalla-freq-echo-vst2.ts:115</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -1570,7 +1660,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fluidplugin.html">FluidPlugin</a>.<a href="fluidplugin.html#getnormalizedvalue">getNormalizedValue</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/FluidPlugin.ts#L135">FluidPlugin.ts:135</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/FluidPlugin.ts#L161">FluidPlugin.ts:161</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1603,7 +1693,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fluidplugin.html">FluidPlugin</a>.<a href="fluidplugin.html#getparameterindex">getParameterIndex</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/FluidPlugin.ts#L188">FluidPlugin.ts:188</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/FluidPlugin.ts#L214">FluidPlugin.ts:214</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1636,7 +1726,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fluidplugin.html">FluidPlugin</a>.<a href="fluidplugin.html#getparametername">getParameterName</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/FluidPlugin.ts#L176">FluidPlugin.ts:176</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/FluidPlugin.ts#L202">FluidPlugin.ts:202</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1650,7 +1740,7 @@
 								<p>This function attempts to get JUCE&#39;s name from the key. If the key is not
 									registered on the plugin, just return the <code>key</code> argument directly. This
 									behavior is designed to make it possible to use and configure plugins with
-								the FludPlugin base class even when there is no adapter available.</p>
+								the FluidPlugin base class even when there is no adapter available.</p>
 								<p>When there is no adapter available, you can just set a parameter directly:
 								`pluginInstance.parameters[&quot;Wet Level&quot;] = 0.8;</p>
 							</div>
@@ -1678,7 +1768,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="fluidplugin.html">FluidPlugin</a>.<a href="fluidplugin.html#sidechainwith">sidechainWith</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/cybr/blob/c90d5a1/fluid-music/src/FluidPlugin.ts#L220">FluidPlugin.ts:220</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/5f09560/fluid-music/src/FluidPlugin.ts#L247">FluidPlugin.ts:247</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1698,6 +1788,10 @@
 								<p>Note that sidechains are resolved by the FluidSession constructor, so in
 									the example above, a call to <code>session.resolveSidechainReceives()</code> is not
 								necessary.</p>
+								<dl class="tsd-comment-tags">
+									<dt>chainable</dt>
+									<dd></dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -1788,8 +1882,17 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="plugins.valhallafreqechovst2.html#automation" class="tsd-kind-icon">automation</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="plugins.valhallafreqechovst2.html#issynth" class="tsd-kind-icon">is<wbr>Synth</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
 								<a href="plugins.valhallafreqechovst2.html#makeautomation" class="tsd-kind-icon">make<wbr>Automation</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="plugins.valhallafreqechovst2.html#numaudioinputchannels" class="tsd-kind-icon">num<wbr>Audio<wbr>Input<wbr>Channels</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="plugins.valhallafreqechovst2.html#numaudiooutputchannels" class="tsd-kind-icon">num<wbr>Audio<wbr>Output<wbr>Channels</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
 								<a href="plugins.valhallafreqechovst2.html#parameterlibrary" class="tsd-kind-icon">parameter<wbr>Library</a>
@@ -1808,6 +1911,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="plugins.valhallafreqechovst2.html#unresolvedsidechainreceive" class="tsd-kind-icon">unresolved<wbr>Sidechain<wbr>Receive</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="plugins.valhallafreqechovst2.html#vst2" class="tsd-kind-icon">vst2</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 								<a href="plugins.valhallafreqechovst2.html#plugintype-1" class="tsd-kind-icon">Plugin<wbr>Type</a>

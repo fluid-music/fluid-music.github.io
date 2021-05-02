@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>UnresolvedReceive | fluid-music - v0.9.4</title>
+	<title>FluidMidiClip | fluid-music - v0.9.4</title>
 	<meta name="description" content="Documentation for fluid-music - v0.9.4">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,28 +55,21 @@
 					<a href="../modules.html">fluid-music - v0.9.4</a>
 				</li>
 				<li>
-					<a href="unresolvedreceive.html">UnresolvedReceive</a>
+					<a href="fluidmidiclip.html">FluidMidiClip</a>
 				</li>
 			</ul>
-			<h1>Interface UnresolvedReceive</h1>
+			<h1>Class FluidMidiClip</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>UnresolvedReceives are used for describing sidechain inputs to plugins</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">UnresolvedReceive</span>
+						<span class="target">FluidMidiClip</span>
 					</li>
 				</ul>
 			</section>
@@ -85,50 +78,68 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="fluidmidiclip.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="unresolvedreceive.html#from" class="tsd-kind-icon">from</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="unresolvedreceive.html#gaindb" class="tsd-kind-icon">gain<wbr>Db</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="unresolvedreceive.html#tap" class="tsd-kind-icon">tap</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="fluidmidiclip.html#durationseconds" class="tsd-kind-icon">duration<wbr>Seconds</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="fluidmidiclip.html#events" class="tsd-kind-icon">events</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="fluidmidiclip.html#starttimeseconds" class="tsd-kind-icon">start<wbr>Time<wbr>Seconds</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Fluid<wbr>Midi<wbr>Clip<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="fluidmidiclip.html" class="tsd-signature-type" data-tsd-kind="Class">FluidMidiClip</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="fluidmidiclip.html" class="tsd-signature-type" data-tsd-kind="Class">FluidMidiClip</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="from" class="tsd-anchor"></a>
-					<h3>from</h3>
-					<div class="tsd-signature tsd-kind-icon">from<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="durationseconds" class="tsd-anchor"></a>
+					<h3>duration<wbr>Seconds</h3>
+					<div class="tsd-signature tsd-kind-icon">duration<wbr>Seconds<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/fluid-interfaces.ts#L131">fluid-interfaces.ts:131</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>track name</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="gaindb" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> gain<wbr>Db</h3>
-					<div class="tsd-signature tsd-kind-icon">gain<wbr>Db<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/fluid-interfaces.ts#L132">fluid-interfaces.ts:132</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/FluidMidiClip.ts#L6">FluidMidiClip.ts:6</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="tap" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> tap</h3>
-					<div class="tsd-signature tsd-kind-icon">tap<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">postFader</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="events" class="tsd-anchor"></a>
+					<h3>events</h3>
+					<div class="tsd-signature tsd-kind-icon">events<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">MidiNoteEvent</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/fluid-interfaces.ts#L133">fluid-interfaces.ts:133</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/FluidMidiClip.ts#L4">FluidMidiClip.ts:4</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="starttimeseconds" class="tsd-anchor"></a>
+					<h3>start<wbr>Time<wbr>Seconds</h3>
+					<div class="tsd-signature tsd-kind-icon">start<wbr>Time<wbr>Seconds<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/FluidMidiClip.ts#L5">FluidMidiClip.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -157,67 +168,70 @@
 						<a href="../enums/plugintype.html" class="tsd-kind-icon">Plugin<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="../classes/automationlane.html" class="tsd-kind-icon">Automation<wbr>Lane</a>
+						<a href="automationlane.html" class="tsd-kind-icon">Automation<wbr>Lane</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="../classes/fluidaudiofile.html" class="tsd-kind-icon">Fluid<wbr>Audio<wbr>File</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/fluidmidiclip.html" class="tsd-kind-icon">Fluid<wbr>Midi<wbr>Clip</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/fluidplugin.html" class="tsd-kind-icon">Fluid<wbr>Plugin</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/fluidsession.html" class="tsd-kind-icon">Fluid<wbr>Session</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/fluidtrack.html" class="tsd-kind-icon">Fluid<wbr>Track</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="audiofileoptions.html" class="tsd-kind-icon">Audio<wbr>File<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="automation.html" class="tsd-kind-icon">Automation</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="automationpoint.html" class="tsd-kind-icon">Automation<wbr>Point</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="scoreconfig.html" class="tsd-kind-icon">Score<wbr>Config</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="sessionconfig.html" class="tsd-kind-icon">Session<wbr>Config</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="technique.html" class="tsd-kind-icon">Technique</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="trackconfig.html" class="tsd-kind-icon">Track<wbr>Config</a>
+						<a href="fluidaudiofile.html" class="tsd-kind-icon">Fluid<wbr>Audio<wbr>File</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface">
-						<a href="unresolvedreceive.html" class="tsd-kind-icon">Unresolved<wbr>Receive</a>
+					<li class="current tsd-kind-class">
+						<a href="fluidmidiclip.html" class="tsd-kind-icon">Fluid<wbr>Midi<wbr>Clip</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="unresolvedreceive.html#from" class="tsd-kind-icon">from</a>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="fluidmidiclip.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="unresolvedreceive.html#gaindb" class="tsd-kind-icon">gain<wbr>Db</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="fluidmidiclip.html#durationseconds" class="tsd-kind-icon">duration<wbr>Seconds</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="unresolvedreceive.html#tap" class="tsd-kind-icon">tap</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="fluidmidiclip.html#events" class="tsd-kind-icon">events</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="fluidmidiclip.html#starttimeseconds" class="tsd-kind-icon">start<wbr>Time<wbr>Seconds</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface">
-						<a href="unresolvedsend.html" class="tsd-kind-icon">Unresolved<wbr>Send</a>
+					<li class=" tsd-kind-class">
+						<a href="fluidplugin.html" class="tsd-kind-icon">Fluid<wbr>Plugin</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="fluidsession.html" class="tsd-kind-icon">Fluid<wbr>Session</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="fluidtrack.html" class="tsd-kind-icon">Fluid<wbr>Track</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="usecontext.html" class="tsd-kind-icon">Use<wbr>Context</a>
+						<a href="../interfaces/audiofileoptions.html" class="tsd-kind-icon">Audio<wbr>File<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/automation.html" class="tsd-kind-icon">Automation</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/automationpoint.html" class="tsd-kind-icon">Automation<wbr>Point</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/scoreconfig.html" class="tsd-kind-icon">Score<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/sessionconfig.html" class="tsd-kind-icon">Session<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/technique.html" class="tsd-kind-icon">Technique</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/trackconfig.html" class="tsd-kind-icon">Track<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/unresolvedreceive.html" class="tsd-kind-icon">Unresolved<wbr>Receive</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/unresolvedsend.html" class="tsd-kind-icon">Unresolved<wbr>Send</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/usecontext.html" class="tsd-kind-icon">Use<wbr>Context</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="../modules.html#udpclient" class="tsd-kind-icon">Udp<wbr>Client</a>

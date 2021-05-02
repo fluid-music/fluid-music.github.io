@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TrackAutomation | fluid-music - v0.9.4</title>
+	<title>SendAutomationRamp | fluid-music - v0.9.4</title>
 	<meta name="description" content="Documentation for fluid-music - v0.9.4">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -58,10 +58,10 @@
 					<a href="../modules/techniques.html">techniques</a>
 				</li>
 				<li>
-					<a href="techniques.trackautomation.html">TrackAutomation</a>
+					<a href="techniques.sendautomationramp.html">SendAutomationRamp</a>
 				</li>
 			</ul>
-			<h1>Class TrackAutomation</h1>
+			<h1>Class SendAutomationRamp</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +71,15 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>An automation event on a track</p>
+						<p>Unlike <a href="techniques.sendautomation.html">SendAutomation</a>, which always inserts one automation point, using
+							SendAutomationRamp always inserts two automation points. The <code>use</code> method
+							identifies the current value at the beginning of the event, and ramps to the
+						new value over the duration of the triggering event.</p>
+						<pre><code><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">tLibrarySynth</span><span style="color: #000000"> = {</span>
+<span style="color: #000000">  </span><span style="color: #001080">a:</span><span style="color: #000000"> </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">techniques</span><span style="color: #000000">.</span><span style="color: #267F99">SendAutomationRamp</span><span style="color: #000000">({ </span><span style="color: #001080">to:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;verb&#039;</span><span style="color: #000000">, </span><span style="color: #001080">value:</span><span style="color: #000000"> -</span><span style="color: #098658">6</span><span style="color: #000000">, </span><span style="color: #001080">curve:</span><span style="color: #000000"> -</span><span style="color: #098658">0.5</span><span style="color: #000000"> })</span>
+<span style="color: #000000">  </span><span style="color: #001080">b</span><span style="color: #000000">: </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">techniques</span><span style="color: #000000">.</span><span style="color: #267F99">SendAutomationRamp</span><span style="color: #000000">({ </span><span style="color: #001080">to:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;verb&#039;</span><span style="color: #000000">, </span><span style="color: #001080">value:</span><span style="color: #000000"> -</span><span style="color: #098658">12</span><span style="color: #000000">, </span><span style="color: #001080">curve:</span><span style="color: #000000"> -</span><span style="color: #098658">0.5</span><span style="color: #000000"> })</span>
+<span style="color: #000000">}</span>
+</code></pre>
 					</div>
 				</div>
 			</section>
@@ -79,7 +87,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">TrackAutomation</span>
+						<span class="target">SendAutomationRamp</span>
 					</li>
 				</ul>
 			</section>
@@ -96,21 +104,20 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="techniques.trackautomation.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="techniques.sendautomationramp.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="techniques.trackautomation.html#curve" class="tsd-kind-icon">curve</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="techniques.trackautomation.html#paramkey" class="tsd-kind-icon">param<wbr>Key</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="techniques.trackautomation.html#value" class="tsd-kind-icon">value</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="techniques.sendautomationramp.html#curve" class="tsd-kind-icon">curve</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="techniques.sendautomationramp.html#rampendtechnique" class="tsd-kind-icon">ramp<wbr>End<wbr>Technique</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="techniques.trackautomation.html#use" class="tsd-kind-icon">use</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="techniques.sendautomationramp.html#use" class="tsd-kind-icon">use</a></li>
 							</ul>
 						</section>
 					</div>
@@ -122,22 +129,34 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Track<wbr>Automation<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AutoOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="techniques.trackautomation.html" class="tsd-signature-type" data-tsd-kind="Class">TrackAutomation</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Send<wbr>Automation<wbr>Ramp<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SendAutoOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="techniques.sendautomationramp.html" class="tsd-signature-type" data-tsd-kind="Class">SendAutomationRamp</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/techniques/automation.ts#L18">techniques/automation.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/techniques/automation.ts#L372">techniques/automation.ts:372</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Accepts three parameters:</p>
+									<ul>
+										<li><code>options.to</code> can be a FluidTrack instance or a track name string. A
+											send will be created on the track if it does not exist already. If the
+										track does not exist, using this technique will throw an error.</li>
+										<li><code>options.value</code> send level in dBFS</li>
+										<li><code>options.curve</code> optional automation curve, defaults to 0</li>
+									</ul>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>options: <span class="tsd-signature-type">AutoOptions</span></h5>
+									<h5>options: <span class="tsd-signature-type">SendAutoOptions</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="techniques.trackautomation.html" class="tsd-signature-type" data-tsd-kind="Class">TrackAutomation</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="techniques.sendautomationramp.html" class="tsd-signature-type" data-tsd-kind="Class">SendAutomationRamp</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -150,27 +169,17 @@
 					<div class="tsd-signature tsd-kind-icon">curve<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/techniques/automation.ts#L18">techniques/automation.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/techniques/automation.ts#L371">techniques/automation.ts:371</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="paramkey" class="tsd-anchor"></a>
-					<h3>param<wbr>Key</h3>
-					<div class="tsd-signature tsd-kind-icon">param<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="rampendtechnique" class="tsd-anchor"></a>
+					<h3>ramp<wbr>End<wbr>Technique</h3>
+					<div class="tsd-signature tsd-kind-icon">ramp<wbr>End<wbr>Technique<span class="tsd-signature-symbol">:</span> <a href="techniques.sendautomation.html" class="tsd-signature-type" data-tsd-kind="Class">SendAutomation</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/techniques/automation.ts#L16">techniques/automation.ts:16</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="value" class="tsd-anchor"></a>
-					<h3>value</h3>
-					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/techniques/automation.ts#L17">techniques/automation.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/techniques/automation.ts#L372">techniques/automation.ts:372</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -181,22 +190,22 @@
 					<a name="use" class="tsd-anchor"></a>
 					<h3>use</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">use<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><a href="../interfaces/usecontext.html" class="tsd-signature-type" data-tsd-kind="Interface">UseContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span></li>
+						<li class="tsd-signature tsd-kind-icon">use<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="../interfaces/usecontext.html" class="tsd-signature-type" data-tsd-kind="Interface">UseContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/techniques/automation.ts#L27">techniques/automation.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/techniques/automation.ts#L391">techniques/automation.ts:391</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>__namedParameters: <a href="../interfaces/usecontext.html" class="tsd-signature-type" data-tsd-kind="Interface">UseContext</a></h5>
+									<h5>context: <a href="../interfaces/usecontext.html" class="tsd-signature-type" data-tsd-kind="Interface">UseContext</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -275,33 +284,30 @@
 					<li class=" tsd-kind-class tsd-parent-kind-namespace">
 						<a href="techniques.sendautomation.html" class="tsd-kind-icon">Send<wbr>Automation</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-namespace">
-						<a href="techniques.sendautomationramp.html" class="tsd-kind-icon">Send<wbr>Automation<wbr>Ramp</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-namespace">
-						<a href="techniques.trackautomation.html" class="tsd-kind-icon">Track<wbr>Automation</a>
+						<a href="techniques.sendautomationramp.html" class="tsd-kind-icon">Send<wbr>Automation<wbr>Ramp</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="techniques.trackautomation.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="techniques.sendautomationramp.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="techniques.trackautomation.html#curve" class="tsd-kind-icon">curve</a>
+								<a href="techniques.sendautomationramp.html#curve" class="tsd-kind-icon">curve</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="techniques.trackautomation.html#paramkey" class="tsd-kind-icon">param<wbr>Key</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="techniques.trackautomation.html#value" class="tsd-kind-icon">value</a>
+								<a href="techniques.sendautomationramp.html#rampendtechnique" class="tsd-kind-icon">ramp<wbr>End<wbr>Technique</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="techniques.trackautomation.html#use" class="tsd-kind-icon">use</a>
+								<a href="techniques.sendautomationramp.html#use" class="tsd-kind-icon">use</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="techniques.trackautomation.html" class="tsd-kind-icon">Track<wbr>Automation</a>
+					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-namespace">
 						<a href="techniques.trackgainautomation.html" class="tsd-kind-icon">Track<wbr>Gain<wbr>Automation</a>
 					</li>

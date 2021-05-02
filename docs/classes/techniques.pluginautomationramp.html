@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TrackAutomation | fluid-music - v0.9.4</title>
+	<title>PluginAutomationRamp | fluid-music - v0.9.4</title>
 	<meta name="description" content="Documentation for fluid-music - v0.9.4">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -58,10 +58,10 @@
 					<a href="../modules/techniques.html">techniques</a>
 				</li>
 				<li>
-					<a href="techniques.trackautomation.html">TrackAutomation</a>
+					<a href="techniques.pluginautomationramp.html">PluginAutomationRamp</a>
 				</li>
 			</ul>
-			<h1>Class TrackAutomation</h1>
+			<h1>Class PluginAutomationRamp</h1>
 		</div>
 	</div>
 </header>
@@ -71,15 +71,31 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>An automation event on a track</p>
+						<p>Unlike <a href="techniques.pluginautomation.html">PluginAutomation</a>, using <code>PluginAutomationRamp</code> always inserts two
+							automation points (instead of one). The <code>.use(context)</code> method tries to find
+							the starting value, and then ramps from that value to the value specified by
+						<code>options.value</code> over the course of the triggering event.</p>
 					</div>
+					<pre><code><span style="color: #008000">// Several different plugin selectors may be used</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">plugin</span><span style="color: #000000"> = </span><span style="color: #001080">fluid</span><span style="color: #000000">.</span><span style="color: #001080">plugins</span><span style="color: #000000">.</span><span style="color: #001080">DragonflyHallVst2</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">op1</span><span style="color: #000000"> = { </span><span style="color: #001080">value:</span><span style="color: #000000"> </span><span style="color: #098658">15</span><span style="color: #000000">, </span><span style="color: #001080">paramKey:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;sizeMeters&#039;</span><span style="color: #000000">, </span><span style="color: #001080">plugin:</span><span style="color: #000000"> </span><span style="color: #001080">plugin</span><span style="color: #000000"> }</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">op2</span><span style="color: #000000"> = { </span><span style="color: #001080">value:</span><span style="color: #000000"> </span><span style="color: #098658">10</span><span style="color: #000000">, </span><span style="color: #001080">paramKey:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;sizeMeters&#039;</span><span style="color: #000000">, </span><span style="color: #001080">plugin:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;DragonflyHallReverb&#039;</span><span style="color: #000000"> }</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">op3</span><span style="color: #000000"> = </span><span style="color: #001080">fluid</span><span style="color: #000000">.</span><span style="color: #001080">plugins</span><span style="color: #000000">.</span><span style="color: #001080">DragonflyHallVst2</span><span style="color: #000000">.</span><span style="color: #001080">makeAutomation</span><span style="color: #000000">.</span><span style="color: #795E26">sizeMeters</span><span style="color: #000000">(</span><span style="color: #098658">30</span><span style="color: #000000">)</span>
+<span style="color: #001080">op3</span><span style="color: #000000">.</span><span style="color: #001080">plugin</span><span style="color: #000000">.</span><span style="color: #001080">nth</span><span style="color: #000000"> = </span><span style="color: #098658">2</span><span style="color: #000000"> </span><span style="color: #008000">// Select an instance other than the first</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">tLibraryVerb</span><span style="color: #000000"> = {</span>
+<span style="color: #000000"> </span><span style="color: #001080">b:</span><span style="color: #000000"> </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">techniques</span><span style="color: #000000">.</span><span style="color: #267F99">PluginAutomationRamp</span><span style="color: #000000">(</span><span style="color: #001080">op1</span><span style="color: #000000">),</span>
+<span style="color: #000000"> </span><span style="color: #001080">c:</span><span style="color: #000000"> </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">techniques</span><span style="color: #000000">.</span><span style="color: #267F99">PluginAutomationRamp</span><span style="color: #000000">(</span><span style="color: #001080">op2</span><span style="color: #000000">),</span>
+<span style="color: #000000"> </span><span style="color: #001080">a:</span><span style="color: #000000"> </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">techniques</span><span style="color: #000000">.</span><span style="color: #267F99">PluginAutomationRamp</span><span style="color: #000000">(</span><span style="color: #001080">op3</span><span style="color: #000000">),</span>
+<span style="color: #000000">}</span>
+</code></pre>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">TrackAutomation</span>
+						<span class="target">PluginAutomationRamp</span>
 					</li>
 				</ul>
 			</section>
@@ -96,21 +112,21 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="techniques.trackautomation.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="techniques.pluginautomationramp.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="techniques.trackautomation.html#curve" class="tsd-kind-icon">curve</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="techniques.trackautomation.html#paramkey" class="tsd-kind-icon">param<wbr>Key</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="techniques.trackautomation.html#value" class="tsd-kind-icon">value</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="techniques.pluginautomationramp.html#curve" class="tsd-kind-icon">curve</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="techniques.pluginautomationramp.html#rampendtechnique" class="tsd-kind-icon">ramp<wbr>End<wbr>Technique</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="techniques.pluginautomationramp.html#rampstartoptions" class="tsd-kind-icon">ramp<wbr>Start<wbr>Options</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="techniques.trackautomation.html#use" class="tsd-kind-icon">use</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="techniques.pluginautomationramp.html#use" class="tsd-kind-icon">use</a></li>
 							</ul>
 						</section>
 					</div>
@@ -122,22 +138,22 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Track<wbr>Automation<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AutoOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="techniques.trackautomation.html" class="tsd-signature-type" data-tsd-kind="Class">TrackAutomation</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Plugin<wbr>Automation<wbr>Ramp<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PluginAutoOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="techniques.pluginautomationramp.html" class="tsd-signature-type" data-tsd-kind="Class">PluginAutomationRamp</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/techniques/automation.ts#L18">techniques/automation.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/techniques/automation.ts#L239">techniques/automation.ts:239</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>options: <span class="tsd-signature-type">AutoOptions</span></h5>
+									<h5>options: <span class="tsd-signature-type">PluginAutoOptions</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="techniques.trackautomation.html" class="tsd-signature-type" data-tsd-kind="Class">TrackAutomation</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="techniques.pluginautomationramp.html" class="tsd-signature-type" data-tsd-kind="Class">PluginAutomationRamp</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -150,27 +166,27 @@
 					<div class="tsd-signature tsd-kind-icon">curve<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/techniques/automation.ts#L18">techniques/automation.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/techniques/automation.ts#L237">techniques/automation.ts:237</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="paramkey" class="tsd-anchor"></a>
-					<h3>param<wbr>Key</h3>
-					<div class="tsd-signature tsd-kind-icon">param<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="rampendtechnique" class="tsd-anchor"></a>
+					<h3>ramp<wbr>End<wbr>Technique</h3>
+					<div class="tsd-signature tsd-kind-icon">ramp<wbr>End<wbr>Technique<span class="tsd-signature-symbol">:</span> <a href="techniques.pluginautomation.html" class="tsd-signature-type" data-tsd-kind="Class">PluginAutomation</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/techniques/automation.ts#L16">techniques/automation.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/techniques/automation.ts#L239">techniques/automation.ts:239</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="value" class="tsd-anchor"></a>
-					<h3>value</h3>
-					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div>
+					<a name="rampstartoptions" class="tsd-anchor"></a>
+					<h3>ramp<wbr>Start<wbr>Options</h3>
+					<div class="tsd-signature tsd-kind-icon">ramp<wbr>Start<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">PluginAutoOptions</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/techniques/automation.ts#L17">techniques/automation.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/techniques/automation.ts#L238">techniques/automation.ts:238</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -181,22 +197,22 @@
 					<a name="use" class="tsd-anchor"></a>
 					<h3>use</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">use<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><a href="../interfaces/usecontext.html" class="tsd-signature-type" data-tsd-kind="Interface">UseContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span></li>
+						<li class="tsd-signature tsd-kind-icon">use<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="../interfaces/usecontext.html" class="tsd-signature-type" data-tsd-kind="Interface">UseContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/techniques/automation.ts#L27">techniques/automation.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/techniques/automation.ts#L253">techniques/automation.ts:253</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>__namedParameters: <a href="../interfaces/usecontext.html" class="tsd-signature-type" data-tsd-kind="Interface">UseContext</a></h5>
+									<h5>context: <a href="../interfaces/usecontext.html" class="tsd-signature-type" data-tsd-kind="Interface">UseContext</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -266,9 +282,30 @@
 					<li class=" tsd-kind-class tsd-parent-kind-namespace">
 						<a href="techniques.pluginautomation.html" class="tsd-kind-icon">Plugin<wbr>Automation</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-namespace">
 						<a href="techniques.pluginautomationramp.html" class="tsd-kind-icon">Plugin<wbr>Automation<wbr>Ramp</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="techniques.pluginautomationramp.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="techniques.pluginautomationramp.html#curve" class="tsd-kind-icon">curve</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="techniques.pluginautomationramp.html#rampendtechnique" class="tsd-kind-icon">ramp<wbr>End<wbr>Technique</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="techniques.pluginautomationramp.html#rampstartoptions" class="tsd-kind-icon">ramp<wbr>Start<wbr>Options</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="techniques.pluginautomationramp.html#use" class="tsd-kind-icon">use</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-class tsd-parent-kind-namespace">
 						<a href="techniques.random.html" class="tsd-kind-icon">Random</a>
 					</li>
@@ -278,30 +315,9 @@
 					<li class=" tsd-kind-class tsd-parent-kind-namespace">
 						<a href="techniques.sendautomationramp.html" class="tsd-kind-icon">Send<wbr>Automation<wbr>Ramp</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-namespace">
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
 						<a href="techniques.trackautomation.html" class="tsd-kind-icon">Track<wbr>Automation</a>
-						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="techniques.trackautomation.html#constructor" class="tsd-kind-icon">constructor</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="techniques.trackautomation.html#curve" class="tsd-kind-icon">curve</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="techniques.trackautomation.html#paramkey" class="tsd-kind-icon">param<wbr>Key</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="techniques.trackautomation.html#value" class="tsd-kind-icon">value</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="techniques.trackautomation.html#use" class="tsd-kind-icon">use</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-class tsd-parent-kind-namespace">
 						<a href="techniques.trackgainautomation.html" class="tsd-kind-icon">Track<wbr>Gain<wbr>Automation</a>
 					</li>

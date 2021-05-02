@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>AudioFileMode | fluid-music - v0.9.4</title>
+	<title>AutomationLane | fluid-music - v0.9.4</title>
 	<meta name="description" content="Documentation for fluid-music - v0.9.4">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,87 +55,103 @@
 					<a href="../modules.html">fluid-music - v0.9.4</a>
 				</li>
 				<li>
-					<a href="audiofilemode.html">AudioFileMode</a>
+					<a href="automationlane.html">AutomationLane</a>
 				</li>
 			</ul>
-			<h1>Enumeration AudioFileMode</h1>
+			<h1>Class AutomationLane</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>AudioFile playback modes</p>
-					</div>
-				</div>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">AutomationLane</span>
+					</li>
+				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Enumeration members</h3>
+							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="audiofilemode.html#event" class="tsd-kind-icon">Event</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="audiofilemode.html#oneshot" class="tsd-kind-icon">One<wbr>Shot</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="audiofilemode.html#onevoice" class="tsd-kind-icon">One<wbr>Voice</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="automationlane.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="automationlane.html#points" class="tsd-kind-icon">points</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="automationlane.html#getlastpointat" class="tsd-kind-icon">get<wbr>Last<wbr>Point<wbr>At</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Enumeration members</h2>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="event" class="tsd-anchor"></a>
-					<h3>Event</h3>
-					<div class="tsd-signature tsd-kind-icon">Event<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 1</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/FluidAudioFile.ts#L8">FluidAudioFile.ts:8</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>In this default mode, a <code>&#39;1234&#39;</code> rhythm  string, combined with a <code>&#39;s...&#39;</code>
-							will trim the length of the inserted audio file to a quarter note.</p>
-						</div>
-					</div>
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Automation<wbr>Lane<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="automationlane.html" class="tsd-signature-type" data-tsd-kind="Class">AutomationLane</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="automationlane.html" class="tsd-signature-type" data-tsd-kind="Class">AutomationLane</a></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="oneshot" class="tsd-anchor"></a>
-					<h3>One<wbr>Shot</h3>
-					<div class="tsd-signature tsd-kind-icon">One<wbr>Shot<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 2</span></div>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="points" class="tsd-anchor"></a>
+					<h3>points</h3>
+					<div class="tsd-signature tsd-kind-icon">points<span class="tsd-signature-symbol">:</span> <a href="../interfaces/automationpoint.html" class="tsd-signature-type" data-tsd-kind="Interface">AutomationPoint</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/FluidAudioFile.ts#L16">FluidAudioFile.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/FluidAutomation.ts#L19">FluidAutomation.ts:19</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The OneShot mode plays the file to its conclusion, ignoring the event
-							length extracted from the pattern string</p>
-						</div>
-					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="onevoice" class="tsd-anchor"></a>
-					<h3>One<wbr>Voice</h3>
-					<div class="tsd-signature tsd-kind-icon">One<wbr>Voice<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 3</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/FluidAudioFile.ts#L21">FluidAudioFile.ts:21</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Play the audio file to its conclusion, OR fade it out at the onset of the
-							next AudioFile in the clip (whichever happens first)</p>
-						</div>
-					</div>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getlastpointat" class="tsd-anchor"></a>
+					<h3>get<wbr>Last<wbr>Point<wbr>At</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Last<wbr>Point<wbr>At<span class="tsd-signature-symbol">(</span>timeSeconds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/automationpoint.html" class="tsd-signature-type" data-tsd-kind="Interface">AutomationPoint</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/FluidAutomation.ts#L21">FluidAutomation.ts:21</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>timeSeconds: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/automationpoint.html" class="tsd-signature-type" data-tsd-kind="Interface">AutomationPoint</a></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -155,44 +171,44 @@
 					<li class=" tsd-kind-reference">
 						<a href="../modules.html#ipcclient" class="tsd-kind-icon">Ipc<wbr>Client</a>
 					</li>
+					<li class=" tsd-kind-enum">
+						<a href="../enums/audiofilemode.html" class="tsd-kind-icon">Audio<wbr>File<wbr>Mode</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="../enums/plugintype.html" class="tsd-kind-icon">Plugin<wbr>Type</a>
+					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-enum">
-						<a href="audiofilemode.html" class="tsd-kind-icon">Audio<wbr>File<wbr>Mode</a>
+					<li class="current tsd-kind-class">
+						<a href="automationlane.html" class="tsd-kind-icon">Automation<wbr>Lane</a>
 						<ul>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="audiofilemode.html#event" class="tsd-kind-icon">Event</a>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="automationlane.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="audiofilemode.html#oneshot" class="tsd-kind-icon">One<wbr>Shot</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="automationlane.html#points" class="tsd-kind-icon">points</a>
 							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="audiofilemode.html#onevoice" class="tsd-kind-icon">One<wbr>Voice</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="automationlane.html#getlastpointat" class="tsd-kind-icon">get<wbr>Last<wbr>Point<wbr>At</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-enum">
-						<a href="plugintype.html" class="tsd-kind-icon">Plugin<wbr>Type</a>
+					<li class=" tsd-kind-class">
+						<a href="fluidaudiofile.html" class="tsd-kind-icon">Fluid<wbr>Audio<wbr>File</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="../classes/automationlane.html" class="tsd-kind-icon">Automation<wbr>Lane</a>
+						<a href="fluidmidiclip.html" class="tsd-kind-icon">Fluid<wbr>Midi<wbr>Clip</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="../classes/fluidaudiofile.html" class="tsd-kind-icon">Fluid<wbr>Audio<wbr>File</a>
+						<a href="fluidplugin.html" class="tsd-kind-icon">Fluid<wbr>Plugin</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="../classes/fluidmidiclip.html" class="tsd-kind-icon">Fluid<wbr>Midi<wbr>Clip</a>
+						<a href="fluidsession.html" class="tsd-kind-icon">Fluid<wbr>Session</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="../classes/fluidplugin.html" class="tsd-kind-icon">Fluid<wbr>Plugin</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/fluidsession.html" class="tsd-kind-icon">Fluid<wbr>Session</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/fluidtrack.html" class="tsd-kind-icon">Fluid<wbr>Track</a>
+						<a href="fluidtrack.html" class="tsd-kind-icon">Fluid<wbr>Track</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/audiofileoptions.html" class="tsd-kind-icon">Audio<wbr>File<wbr>Options</a>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>UnresolvedReceive | fluid-music - v0.9.4</title>
+	<title>Technique | fluid-music - v0.9.4</title>
 	<meta name="description" content="Documentation for fluid-music - v0.9.4">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,29 +55,42 @@
 					<a href="../modules.html">fluid-music - v0.9.4</a>
 				</li>
 				<li>
-					<a href="unresolvedreceive.html">UnresolvedReceive</a>
+					<a href="technique.html">Technique</a>
 				</li>
 			</ul>
-			<h1>Interface UnresolvedReceive</h1>
+			<h1>Interface Technique</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>UnresolvedReceives are used for describing sidechain inputs to plugins</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">UnresolvedReceive</span>
+						<span class="target">Technique</span>
 					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implemented by</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../classes/techniques.afreverse.html" class="tsd-signature-type" data-tsd-kind="Class">AFReverse</a></li>
+					<li><a href="../classes/techniques.afreverseleadin.html" class="tsd-signature-type" data-tsd-kind="Class">AFReverseLeadIn</a></li>
+					<li><a href="../classes/techniques.audiofile.html" class="tsd-signature-type" data-tsd-kind="Class">AudioFile</a></li>
+					<li><a href="../classes/techniques.ilayers.html" class="tsd-signature-type" data-tsd-kind="Class">ILayers</a></li>
+					<li><a href="../classes/techniques.midichord.html" class="tsd-signature-type" data-tsd-kind="Class">MidiChord</a></li>
+					<li><a href="../classes/techniques.midinote.html" class="tsd-signature-type" data-tsd-kind="Class">MidiNote</a></li>
+					<li><a href="../classes/techniques.nudge.html" class="tsd-signature-type" data-tsd-kind="Class">Nudge</a></li>
+					<li><a href="../classes/techniques.pluginautomation.html" class="tsd-signature-type" data-tsd-kind="Class">PluginAutomation</a></li>
+					<li><a href="../classes/techniques.pluginautomationramp.html" class="tsd-signature-type" data-tsd-kind="Class">PluginAutomationRamp</a></li>
+					<li><a href="../classes/techniques.random.html" class="tsd-signature-type" data-tsd-kind="Class">Random</a></li>
+					<li><a href="../classes/techniques.sendautomation.html" class="tsd-signature-type" data-tsd-kind="Class">SendAutomation</a></li>
+					<li><a href="../classes/techniques.sendautomationramp.html" class="tsd-signature-type" data-tsd-kind="Class">SendAutomationRamp</a></li>
+					<li><a href="../classes/techniques.trackautomation.html" class="tsd-signature-type" data-tsd-kind="Class">TrackAutomation</a></li>
+					<li><a href="../classes/techniques.trackgainautomation.html" class="tsd-signature-type" data-tsd-kind="Class">TrackGainAutomation</a></li>
+					<li><a href="../classes/techniques.trackgainautomationramp.html" class="tsd-signature-type" data-tsd-kind="Class">TrackGainAutomationRamp</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -87,9 +100,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="unresolvedreceive.html#from" class="tsd-kind-icon">from</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="unresolvedreceive.html#gaindb" class="tsd-kind-icon">gain<wbr>Db</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="unresolvedreceive.html#tap" class="tsd-kind-icon">tap</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="technique.html#finalize" class="tsd-kind-icon">finalize</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="technique.html#use" class="tsd-kind-icon">use</a></li>
 							</ul>
 						</section>
 					</div>
@@ -98,39 +110,64 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="from" class="tsd-anchor"></a>
-					<h3>from</h3>
-					<div class="tsd-signature tsd-kind-icon">from<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="finalize" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> finalize</h3>
+					<div class="tsd-signature tsd-kind-icon">finalize<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>session<span class="tsd-signature-symbol">: </span><a href="../classes/fluidsession.html" class="tsd-signature-type" data-tsd-kind="Class">FluidSession</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/fluid-interfaces.ts#L131">fluid-interfaces.ts:131</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/fluid-interfaces.ts#L24">fluid-interfaces.ts:24</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>track name</p>
+							<p>Techniques may have a finalize method, which will be invoked in when
+								calling <code>session.finalize()</code> for each unique finalize function that was
+								inserted via <code>session.insertScore(...)</code> since the last call to
+								<code>session.finalize</code>. Note that the when finalize methods are not associated
+								with any particular technique instance, so <code>.this</code> will be undefined inside
+							the finalize method invocation.</p>
 						</div>
+						<p>The order that finalizers will be called in is undefined. It&#39;s a good idea
+							to make finalizers idempotent because a finalizer may be called more than
+						one if the user does the following:</p>
+						<ol>
+							<li>`session.insertScore(scoreContainingFinalizerTechnique)</li>
+							<li>`session.finalize()</li>
+							<li>`session.insertScore(scoreContainingFinalizerTechnique)</li>
+							<li><code>session.finalize() // finalizer invoked a second time</code></li>
+						</ol>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="gaindb" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> gain<wbr>Db</h3>
-					<div class="tsd-signature tsd-kind-icon">gain<wbr>Db<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<a name="use" class="tsd-anchor"></a>
+					<h3>use</h3>
+					<div class="tsd-signature tsd-kind-icon">use<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="usecontext.html" class="tsd-signature-type" data-tsd-kind="Interface">UseContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/fluid-interfaces.ts#L132">fluid-interfaces.ts:132</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/fluid-interfaces.ts#L5">fluid-interfaces.ts:5</a></li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="tap" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> tap</h3>
-					<div class="tsd-signature tsd-kind-icon">tap<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">postFader</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/080bff7/src/fluid-interfaces.ts#L133">fluid-interfaces.ts:133</a></li>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="usecontext.html" class="tsd-signature-type" data-tsd-kind="Interface">UseContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>context: <a href="usecontext.html" class="tsd-signature-type" data-tsd-kind="Interface">UseContext</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+									</li>
+								</ul>
+							</li>
 						</ul>
-					</aside>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -189,30 +226,27 @@
 					<li class=" tsd-kind-interface">
 						<a href="sessionconfig.html" class="tsd-kind-icon">Session<wbr>Config</a>
 					</li>
-					<li class=" tsd-kind-interface">
-						<a href="technique.html" class="tsd-kind-icon">Technique</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="trackconfig.html" class="tsd-kind-icon">Track<wbr>Config</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="unresolvedreceive.html" class="tsd-kind-icon">Unresolved<wbr>Receive</a>
+						<a href="technique.html" class="tsd-kind-icon">Technique</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="unresolvedreceive.html#from" class="tsd-kind-icon">from</a>
+								<a href="technique.html#finalize" class="tsd-kind-icon">finalize</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="unresolvedreceive.html#gaindb" class="tsd-kind-icon">gain<wbr>Db</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="unresolvedreceive.html#tap" class="tsd-kind-icon">tap</a>
+								<a href="technique.html#use" class="tsd-kind-icon">use</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface">
+						<a href="trackconfig.html" class="tsd-kind-icon">Track<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="unresolvedreceive.html" class="tsd-kind-icon">Unresolved<wbr>Receive</a>
+					</li>
 					<li class=" tsd-kind-interface">
 						<a href="unresolvedsend.html" class="tsd-kind-icon">Unresolved<wbr>Send</a>
 					</li>

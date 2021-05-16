@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>gen | fluid-music - v0.9.5</title>
-	<meta name="description" content="Documentation for fluid-music - v0.9.5">
+	<title>gen | fluid-music - v0.9.6-beta.0</title>
+	<meta name="description" content="Documentation for fluid-music - v0.9.6-beta.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 	<script async src="../assets/js/search.js" id="search-script"></script>
@@ -23,7 +23,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">fluid-music - v0.9.5</a>
+					<a href="../index.html" class="title">fluid-music - v0.9.6-beta.0</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -52,7 +52,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../modules.html">fluid-music - v0.9.5</a>
+					<a href="../modules.html">fluid-music - v0.9.6-beta.0</a>
 				</li>
 				<li>
 					<a href="gen.html">gen</a>
@@ -84,13 +84,13 @@
 					<a name="generatepluginmodule" class="tsd-anchor"></a>
 					<h3>generate<wbr>Plugin<wbr>Module</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">generate<wbr>Plugin<wbr>Module<span class="tsd-signature-symbol">(</span>report<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, config<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>className<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>extraMethods<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">generate<wbr>Plugin<wbr>Module<span class="tsd-signature-symbol">(</span>report<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, config<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>className<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>extraMethods<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>internal<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/ce69136/src/plugin-generator.ts#L9">plugin-generator.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/ad05e05/src/plugin-generator.ts#L14">plugin-generator.ts:14</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -107,13 +107,26 @@
 									</div>
 								</li>
 								<li>
-									<h5>config: <span class="tsd-signature-symbol">{ </span>className<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>extraMethods<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = ...</span></h5>
+									<h5>config: <span class="tsd-signature-symbol">{ </span>className<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>extraMethods<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>internal<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = {}</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter">
-											<h5><span class="tsd-flag ts-flagOptional">Optional</span> class<wbr>Name<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> class<wbr>Name<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+											<div class="tsd-comment tsd-typography">
+												<p>Optionally override the report&#39;s pluginName</p>
+											</div>
 										</li>
 										<li class="tsd-parameter">
-											<h5><span class="tsd-flag ts-flagOptional">Optional</span> extra<wbr>Methods<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> extra<wbr>Methods<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> internal<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span></h5>
+											<div class="tsd-comment tsd-typography">
+												<p>Set this to <code>true</code> for any plugins that are bundled
+													with the main <code>fluid-music</code> library. By default, the plugin modules generated
+													by <code>generatePluginModule</code> import their fluid-music dependencies with from the
+													<code>fluid-music</code> module. The plugins that are bundled with fluid-music, should
+												import their deps from local typescript modules.</p>
+											</div>
 										</li>
 									</ul>
 								</li>

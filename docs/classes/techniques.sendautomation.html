@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>SendAutomation | fluid-music - v0.9.5</title>
-	<meta name="description" content="Documentation for fluid-music - v0.9.5">
+	<title>SendAutomation | fluid-music - v0.9.6-beta.0</title>
+	<meta name="description" content="Documentation for fluid-music - v0.9.6-beta.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 	<script async src="../assets/js/search.js" id="search-script"></script>
@@ -23,7 +23,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">fluid-music - v0.9.5</a>
+					<a href="../index.html" class="title">fluid-music - v0.9.6-beta.0</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -52,7 +52,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../modules.html">fluid-music - v0.9.5</a>
+					<a href="../modules.html">fluid-music - v0.9.6-beta.0</a>
 				</li>
 				<li>
 					<a href="../modules/techniques.html">techniques</a>
@@ -132,7 +132,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/ce69136/src/techniques/automation.ts#L285">techniques/automation.ts:285</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/ad05e05/src/techniques/automation.ts#L285">techniques/automation.ts:285</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -144,8 +144,8 @@
 										track does not exist, using this technique will throw an error.</li>
 										<li><code>options.value</code> send level in dBFS</li>
 										<li><code>options.curve</code> optional automation curve, defaults to 0<pre><code><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">tLibrarySynth</span><span style="color: #000000"> = {</span>
-<span style="color: #001080">a:</span><span style="color: #000000"> </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">techniques</span><span style="color: #000000">.</span><span style="color: #267F99">SendAutomation</span><span style="color: #000000">({ </span><span style="color: #001080">to:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;verb&#039;</span><span style="color: #000000">, </span><span style="color: #001080">value:</span><span style="color: #000000"> -</span><span style="color: #098658">6</span><span style="color: #000000">, </span><span style="color: #001080">curve:</span><span style="color: #000000"> -</span><span style="color: #098658">0.5</span><span style="color: #000000"> })</span>
-<span style="color: #001080">b</span><span style="color: #000000">: </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">techniques</span><span style="color: #000000">.</span><span style="color: #267F99">SendAutomation</span><span style="color: #000000">({ </span><span style="color: #001080">to:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;verb&#039;</span><span style="color: #000000">, </span><span style="color: #001080">value:</span><span style="color: #000000"> -</span><span style="color: #098658">12</span><span style="color: #000000">, </span><span style="color: #001080">curve:</span><span style="color: #000000"> -</span><span style="color: #098658">0.5</span><span style="color: #000000"> })</span>
+<span style="color: #001080">a:</span><span style="color: #000000"> </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #001080">techniques</span><span style="color: #000000">.</span><span style="color: #795E26">SendAutomation</span><span style="color: #000000">({ </span><span style="color: #001080">to:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;verb&#039;</span><span style="color: #000000">, </span><span style="color: #001080">value:</span><span style="color: #000000"> -</span><span style="color: #098658">6</span><span style="color: #000000">, </span><span style="color: #001080">curve:</span><span style="color: #000000"> -</span><span style="color: #098658">0.5</span><span style="color: #000000"> })</span>
+<span style="color: #001080">b</span><span style="color: #000000">: </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #001080">techniques</span><span style="color: #000000">.</span><span style="color: #795E26">SendAutomation</span><span style="color: #000000">({ </span><span style="color: #001080">to:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;verb&#039;</span><span style="color: #000000">, </span><span style="color: #001080">value:</span><span style="color: #000000"> -</span><span style="color: #098658">12</span><span style="color: #000000">, </span><span style="color: #001080">curve:</span><span style="color: #000000"> -</span><span style="color: #098658">0.5</span><span style="color: #000000"> })</span>
 <span style="color: #000000">}</span>
 </code></pre>
 										</li>
@@ -171,17 +171,17 @@
 					<div class="tsd-signature tsd-kind-icon">curve<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/ce69136/src/techniques/automation.ts#L285">techniques/automation.ts:285</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/ad05e05/src/techniques/automation.ts#L285">techniques/automation.ts:285</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="destinationtrack" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagOptional">Optional</span> destination<wbr>Track</h3>
-					<div class="tsd-signature tsd-kind-icon">destination<wbr>Track<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="fluidtrack.html" class="tsd-signature-type" data-tsd-kind="Class">FluidTrack</a></div>
+					<div class="tsd-signature tsd-kind-icon">destination<wbr>Track<span class="tsd-signature-symbol">:</span> <a href="fluidtrack.html" class="tsd-signature-type" data-tsd-kind="Class">FluidTrack</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/ce69136/src/techniques/automation.ts#L280">techniques/automation.ts:280</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/ad05e05/src/techniques/automation.ts#L280">techniques/automation.ts:280</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -193,10 +193,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="unresolvedtrackname" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagOptional">Optional</span> unresolved<wbr>Track<wbr>Name</h3>
-					<div class="tsd-signature tsd-kind-icon">unresolved<wbr>Track<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<div class="tsd-signature tsd-kind-icon">unresolved<wbr>Track<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/ce69136/src/techniques/automation.ts#L281">techniques/automation.ts:281</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/ad05e05/src/techniques/automation.ts#L281">techniques/automation.ts:281</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -206,7 +206,7 @@
 					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/ce69136/src/techniques/automation.ts#L284">techniques/automation.ts:284</a></li>
+							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/ad05e05/src/techniques/automation.ts#L284">techniques/automation.ts:284</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -228,7 +228,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/ce69136/src/techniques/automation.ts#L335">techniques/automation.ts:335</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/ad05e05/src/techniques/automation.ts#L335">techniques/automation.ts:335</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -260,7 +260,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/ce69136/src/techniques/automation.ts#L325">techniques/automation.ts:325</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/ad05e05/src/techniques/automation.ts#L325">techniques/automation.ts:325</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -292,8 +292,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of Technique.use</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/ce69136/src/techniques/automation.ts#L310">techniques/automation.ts:310</a></li>
+									<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/ad05e05/src/techniques/automation.ts#L310">techniques/automation.ts:310</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>

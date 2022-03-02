@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>AudioFileMode | fluid-music - v0.9.6-beta.1</title>
-	<meta name="description" content="Documentation for fluid-music - v0.9.6-beta.1">
+	<title>AudioFileMode | fluid-music - v0.10.0</title>
+	<meta name="description" content="Documentation for fluid-music - v0.10.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 	<script async src="../assets/js/search.js" id="search-script"></script>
@@ -23,7 +23,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">fluid-music - v0.9.6-beta.1</a>
+					<a href="../index.html" class="title">fluid-music - v0.10.0</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -52,7 +52,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../modules.html">fluid-music - v0.9.6-beta.1</a>
+					<a href="../modules.html">fluid-music - v0.10.0</a>
 				</li>
 				<li>
 					<a href="audiofilemode.html">AudioFileMode</a>
@@ -79,6 +79,7 @@
 						<section class="tsd-index-section ">
 							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="audiofilemode.html#basic" class="tsd-kind-icon">Basic</a></li>
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="audiofilemode.html#event" class="tsd-kind-icon">Event</a></li>
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="audiofilemode.html#oneshot" class="tsd-kind-icon">One<wbr>Shot</a></li>
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="audiofilemode.html#onevoice" class="tsd-kind-icon">One<wbr>Voice</a></li>
@@ -90,28 +91,66 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Enumeration members</h2>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="event" class="tsd-anchor"></a>
-					<h3>Event</h3>
-					<div class="tsd-signature tsd-kind-icon">Event<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 1</span></div>
+					<a name="basic" class="tsd-anchor"></a>
+					<h3>Basic</h3>
+					<div class="tsd-signature tsd-kind-icon">Basic<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/b08f74c/src/FluidAudioFile.ts#L8">FluidAudioFile.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/fluid-music/fluid-music/blob/f3826de/src/FluidAudioFile.ts#L23">FluidAudioFile.ts:23</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>In this default mode, a <code>&#39;1234&#39;</code> rhythm  string, combined with a <code>&#39;s...&#39;</code>
-							will trim the length of the inserted audio file to a quarter note.</p>
+							<p>In this default mode, the duration of the audio item on a track will simply
+								follow the audio file&#39;s <code>durationSeconds</code> property. <code>durationSeconds</code>
+								defaults to the length of the source file, so if no custom
+								<code>durationSeconds</code> is specified on an audio file, <code>Basic</code> mode will function
+							similarly to <code>OneShot</code> mode.</p>
 						</div>
+						<pre><code><span style="color: #008000">// Create an AudioFile technique that truncates playback after 0.5 seconds</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">tambourine</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #001080">fluid</span><span style="color: #000000">.</span><span style="color: #001080">techniques</span><span style="color: #000000">.</span><span style="color: #795E26">AudioFile</span><span style="color: #000000">({</span>
+<span style="color: #000000">  </span><span style="color: #001080">mode:</span><span style="color: #000000"> </span><span style="color: #001080">fluid</span><span style="color: #000000">.</span><span style="color: #001080">AudioFileMode</span><span style="color: #000000">.</span><span style="color: #001080">Basic</span>
+<span style="color: #000000">  </span><span style="color: #001080">path</span><span style="color: #000000">: </span><span style="color: #A31515">&#039;/tambourine.wav&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">info:</span><span style="color: #000000"> { </span><span style="color: #001080">duration:</span><span style="color: #000000"> </span><span style="color: #098658">1.234</span><span style="color: #000000"> } </span><span style="color: #008000">// specifies source file length in seconds</span>
+<span style="color: #000000">  </span><span style="color: #001080">durationSeconds</span><span style="color: #000000">: </span><span style="color: #098658">0.5</span><span style="color: #000000">,     </span><span style="color: #008000">// stop playback after 0.5 seconds</span>
+<span style="color: #000000">  </span><span style="color: #001080">fadeOutSeconds:</span><span style="color: #000000"> </span><span style="color: #098658">0.1</span><span style="color: #000000">,</span>
+<span style="color: #000000">})</span>
+</code></pre>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="event" class="tsd-anchor"></a>
+					<h3>Event</h3>
+					<div class="tsd-signature tsd-kind-icon">Event<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 2</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/fluid-music/fluid-music/blob/f3826de/src/FluidAudioFile.ts#L44">FluidAudioFile.ts:44</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>In this mode, the audio item length will be taken from the <a href="../interfaces/usecontext.html">UseContext</a>&#39;s
+								<code>durationSeconds</code> property. As a result, when using <code>session.insertScore</code>,
+								a <code>&#39;1234&#39;</code> rhythm  string, combined with a <code>&#39;t...&#39;</code> pattern string will
+							trim the length of the inserted audio file to a quarter note.</p>
+						</div>
+						<pre><code><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">tambourine</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #001080">fluid</span><span style="color: #000000">.</span><span style="color: #001080">techniques</span><span style="color: #000000">.</span><span style="color: #795E26">AudioFile</span><span style="color: #000000">({ </span><span style="color: #001080">path:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;/tambourine.wav&#039;</span><span style="color: #000000">, </span><span style="color: #001080">info:</span><span style="color: #000000"> { </span><span style="color: #001080">duration:</span><span style="color: #000000"> </span><span style="color: #098658">1.234</span><span style="color: #000000"> } })</span>
+<span style="color: #001080">tambourine</span><span style="color: #000000">.</span><span style="color: #001080">mode</span><span style="color: #000000"> = </span><span style="color: #001080">fluid</span><span style="color: #000000">.</span><span style="color: #001080">AudioFileMode</span><span style="color: #000000">.</span><span style="color: #001080">Event</span>
+<span style="color: #001080">session</span><span style="color: #000000">.</span><span style="color: #795E26">insertScore</span><span style="color: #000000">({</span>
+<span style="color: #000000">  </span><span style="color: #001080">tLibrary:</span><span style="color: #000000"> { </span><span style="color: #001080">t:</span><span style="color: #000000"> </span><span style="color: #001080">tambourine</span><span style="color: #000000"> )},</span>
+<span style="color: #000000">  r      </span><span style="color: #A31515">&#039;1234&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">drums:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;t.t.&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">})</span>
+</code></pre>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
 					<a name="oneshot" class="tsd-anchor"></a>
 					<h3>One<wbr>Shot</h3>
-					<div class="tsd-signature tsd-kind-icon">One<wbr>Shot<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 2</span></div>
+					<div class="tsd-signature tsd-kind-icon">One<wbr>Shot<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 3</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/b08f74c/src/FluidAudioFile.ts#L16">FluidAudioFile.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/fluid-music/fluid-music/blob/f3826de/src/FluidAudioFile.ts#L49">FluidAudioFile.ts:49</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -124,10 +163,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
 					<a name="onevoice" class="tsd-anchor"></a>
 					<h3>One<wbr>Voice</h3>
-					<div class="tsd-signature tsd-kind-icon">One<wbr>Voice<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 3</span></div>
+					<div class="tsd-signature tsd-kind-icon">One<wbr>Voice<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 4</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/b08f74c/src/FluidAudioFile.ts#L21">FluidAudioFile.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/fluid-music/fluid-music/blob/f3826de/src/FluidAudioFile.ts#L54">FluidAudioFile.ts:54</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -160,6 +199,9 @@
 					<li class="current tsd-kind-enum">
 						<a href="audiofilemode.html" class="tsd-kind-icon">Audio<wbr>File<wbr>Mode</a>
 						<ul>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="audiofilemode.html#basic" class="tsd-kind-icon">Basic</a>
+							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
 								<a href="audiofilemode.html#event" class="tsd-kind-icon">Event</a>
 							</li>

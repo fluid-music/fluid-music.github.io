@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>AudioFileOptions | fluid-music - v0.9.6-beta.1</title>
-	<meta name="description" content="Documentation for fluid-music - v0.9.6-beta.1">
+	<title>AudioFileOptions | fluid-music - v0.10.0</title>
+	<meta name="description" content="Documentation for fluid-music - v0.10.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 	<script async src="../assets/js/search.js" id="search-script"></script>
@@ -23,7 +23,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">fluid-music - v0.9.6-beta.1</a>
+					<a href="../index.html" class="title">fluid-music - v0.10.0</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -52,7 +52,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../modules.html">fluid-music - v0.9.6-beta.1</a>
+					<a href="../modules.html">fluid-music - v0.10.0</a>
 				</li>
 				<li>
 					<a href="audiofileoptions.html">AudioFileOptions</a>
@@ -92,6 +92,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="audiofileoptions.html#info" class="tsd-kind-icon">info</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="audiofileoptions.html#markers" class="tsd-kind-icon">markers</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="audiofileoptions.html#mode" class="tsd-kind-icon">mode</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="audiofileoptions.html#name" class="tsd-kind-icon">name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="audiofileoptions.html#pan" class="tsd-kind-icon">pan</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite"><a href="audiofileoptions.html#path" class="tsd-kind-icon">path</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="audiofileoptions.html#pitchsemitones" class="tsd-kind-icon">pitch<wbr>Semitones</a></li>
@@ -112,7 +113,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from AudioFileConfig.durationSeconds</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/b08f74c/src/FluidAudioFile.ts#L55">FluidAudioFile.ts:55</a></li>
+							<li>Defined in <a href="https://github.com/fluid-music/fluid-music/blob/f3826de/src/FluidAudioFile.ts#L89">FluidAudioFile.ts:89</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -123,7 +124,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from AudioFileConfig.fadeInSeconds</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/b08f74c/src/FluidAudioFile.ts#L48">FluidAudioFile.ts:48</a></li>
+							<li>Defined in <a href="https://github.com/fluid-music/fluid-music/blob/f3826de/src/FluidAudioFile.ts#L82">FluidAudioFile.ts:82</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -134,7 +135,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from AudioFileConfig.fadeOutSeconds</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/b08f74c/src/FluidAudioFile.ts#L47">FluidAudioFile.ts:47</a></li>
+							<li>Defined in <a href="https://github.com/fluid-music/fluid-music/blob/f3826de/src/FluidAudioFile.ts#L81">FluidAudioFile.ts:81</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -145,7 +146,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from AudioFileConfig.gainDb</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/b08f74c/src/FluidAudioFile.ts#L49">FluidAudioFile.ts:49</a></li>
+							<li>Defined in <a href="https://github.com/fluid-music/fluid-music/blob/f3826de/src/FluidAudioFile.ts#L83">FluidAudioFile.ts:83</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -156,7 +157,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from AudioFileConfig.info</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/b08f74c/src/FluidAudioFile.ts#L52">FluidAudioFile.ts:52</a></li>
+							<li>Defined in <a href="https://github.com/fluid-music/fluid-music/blob/f3826de/src/FluidAudioFile.ts#L86">FluidAudioFile.ts:86</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -167,18 +168,29 @@
 					<aside class="tsd-sources">
 						<p>Inherited from AudioFileConfig.markers</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/b08f74c/src/FluidAudioFile.ts#L57">FluidAudioFile.ts:57</a></li>
+							<li>Defined in <a href="https://github.com/fluid-music/fluid-music/blob/f3826de/src/FluidAudioFile.ts#L91">FluidAudioFile.ts:91</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="mode" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> mode</h3>
-					<div class="tsd-signature tsd-kind-icon">mode<span class="tsd-signature-symbol">:</span> <a href="../enums/audiofilemode.html#event" class="tsd-signature-type" data-tsd-kind="Enumeration member">Event</a><span class="tsd-signature-symbol"> | </span><a href="../enums/audiofilemode.html#oneshot" class="tsd-signature-type" data-tsd-kind="Enumeration member">OneShot</a><span class="tsd-signature-symbol"> | </span><a href="../enums/audiofilemode.html#onevoice" class="tsd-signature-type" data-tsd-kind="Enumeration member">OneVoice</a></div>
+					<div class="tsd-signature tsd-kind-icon">mode<span class="tsd-signature-symbol">:</span> <a href="../enums/audiofilemode.html#basic" class="tsd-signature-type" data-tsd-kind="Enumeration member">Basic</a><span class="tsd-signature-symbol"> | </span><a href="../enums/audiofilemode.html#event" class="tsd-signature-type" data-tsd-kind="Enumeration member">Event</a><span class="tsd-signature-symbol"> | </span><a href="../enums/audiofilemode.html#oneshot" class="tsd-signature-type" data-tsd-kind="Enumeration member">OneShot</a><span class="tsd-signature-symbol"> | </span><a href="../enums/audiofilemode.html#onevoice" class="tsd-signature-type" data-tsd-kind="Enumeration member">OneVoice</a></div>
 					<aside class="tsd-sources">
 						<p>Inherited from AudioFileConfig.mode</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/b08f74c/src/FluidAudioFile.ts#L51">FluidAudioFile.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/fluid-music/fluid-music/blob/f3826de/src/FluidAudioFile.ts#L85">FluidAudioFile.ts:85</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="name" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from AudioFileConfig.name</p>
+						<ul>
+							<li>Defined in <a href="https://github.com/fluid-music/fluid-music/blob/f3826de/src/FluidAudioFile.ts#L79">FluidAudioFile.ts:79</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -189,7 +201,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from AudioFileConfig.pan</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/b08f74c/src/FluidAudioFile.ts#L50">FluidAudioFile.ts:50</a></li>
+							<li>Defined in <a href="https://github.com/fluid-music/fluid-music/blob/f3826de/src/FluidAudioFile.ts#L84">FluidAudioFile.ts:84</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -200,7 +212,7 @@
 					<aside class="tsd-sources">
 						<p>Overrides AudioFileConfig.path</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/b08f74c/src/FluidAudioFile.ts#L42">FluidAudioFile.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/fluid-music/fluid-music/blob/f3826de/src/FluidAudioFile.ts#L75">FluidAudioFile.ts:75</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -211,7 +223,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from AudioFileConfig.pitchSemitones</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/b08f74c/src/FluidAudioFile.ts#L58">FluidAudioFile.ts:58</a></li>
+							<li>Defined in <a href="https://github.com/fluid-music/fluid-music/blob/f3826de/src/FluidAudioFile.ts#L92">FluidAudioFile.ts:92</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -222,7 +234,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from AudioFileConfig.playbackRate</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/b08f74c/src/FluidAudioFile.ts#L56">FluidAudioFile.ts:56</a></li>
+							<li>Defined in <a href="https://github.com/fluid-music/fluid-music/blob/f3826de/src/FluidAudioFile.ts#L90">FluidAudioFile.ts:90</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -233,7 +245,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from AudioFileConfig.startInSourceSeconds</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/b08f74c/src/FluidAudioFile.ts#L53">FluidAudioFile.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/fluid-music/fluid-music/blob/f3826de/src/FluidAudioFile.ts#L87">FluidAudioFile.ts:87</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -244,7 +256,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from AudioFileConfig.startTimeSeconds</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/CharlesHolbrow/fluid-music/blob/b08f74c/src/FluidAudioFile.ts#L54">FluidAudioFile.ts:54</a></li>
+							<li>Defined in <a href="https://github.com/fluid-music/fluid-music/blob/f3826de/src/FluidAudioFile.ts#L88">FluidAudioFile.ts:88</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -315,6 +327,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="audiofileoptions.html#mode" class="tsd-kind-icon">mode</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="audiofileoptions.html#name" class="tsd-kind-icon">name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="audiofileoptions.html#pan" class="tsd-kind-icon">pan</a>
